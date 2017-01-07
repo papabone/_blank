@@ -1,0 +1,135 @@
+@import "_normolise.scss";
+@import "_bootstrap-modal";
+@import "_vars.scss";
+@import "_mymixins.scss";
+@import "_color.scss";
+//@import "_fonts.scss";
+//@import "_social.scss";
+//@import "_myhover.scss";
+@import "_icons.scss";
+@import "_modal";
+@import "_components.scss";
+//@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,300&subset=latin,cyrillic');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&amp;subset=cyrillic,cyrillic-ext,latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:500&amp;subset=cyrillic');
+html{
+  font-size: 14pt;
+  font-family: $font-f;
+  color: $font-c;
+  min-width: 320px;
+}
+body{
+  background-color: $bg-c;
+  overflow-x: hidden;
+}
+section,
+footer,
+header{
+  overflow-x: hidden;
+}
+p{
+  padding-bottom: 20px;
+  margin: 0;
+}
+h1,h2,h3,h4{
+  padding-bottom: 30px;
+  margin: 0;
+}
+section{
+  padding: 80px 0;
+}
+footer{
+  text-align: center;
+}
+button{
+  border: none;
+  outline: none;
+}
+/*a{
+  &:hover,
+  &:active,
+  &:visited,
+  &:link{
+    outline:none;
+  }
+}*/
+
+@media (max-width: 767px){
+  html{
+    font-size: 12px;
+  }
+  p{
+    padding-bottom: 15px;
+  }
+  h1,h2,h3,h4{
+    padding-bottom: 20px;
+  }
+  section{
+    padding: 40px 0;
+  }
+  .title{
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
+  .desc{
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+  .bold{
+    font-size: 1.6rem;
+    line-height: 2.0rem;
+  }
+}
+@media (max-width: 620px) {}
+@media (max-width: 420px) {}
+@media (min-width: 768px) and (max-width: 991px) {
+  html{
+    font-size: 13px;
+  }
+  p{
+    padding-bottom: 17px;
+  }
+  h1,h2,h3,h4{
+    padding-bottom: 25px;
+  }
+  section{
+    padding: 55px 0;
+  }
+  .title{
+    font-size: 2.1rem;
+    line-height: 2.7rem;
+  }
+  .desc{
+    font-size: 1.5rem;
+    line-height: 2.1rem;
+  }
+  .bold{
+    font-size: 1.7rem;
+    line-height: 2.3rem;
+  }
+}
+@media (min-width: 992px)and(max-width: 1199px){
+  p{
+    padding-bottom: 18px;
+  }
+  h1,h2,h3,h4{
+    padding-bottom: 27px;
+  }
+  section{
+    padding: 60px 0;
+  }
+  .title{
+    font-size: 2.3rem;
+    line-height: 2.7rem;
+  }
+  .desc{
+    font-size: 1.7rem;
+    line-height: 2.1rem;
+  }
+  .bold{
+    font-size: 1.9rem;
+    line-height: 2.3rem;
+  }
+}
+@media (min-width: 1200px)and(max-width: 1349px){}
+@media (min-width: 1350px)and(max-width: 1699px){}

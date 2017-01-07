@@ -1,0 +1,2476 @@
+@charset "UTF-8";
+/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Correct the line height in all browsers.
+ * 3. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+/* Document
+   ========================================================================== */
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&amp;subset=cyrillic,cyrillic-ext,latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:500&amp;subset=cyrillic");
+/* line 13, ../sass/_normolise.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  line-height: 1.15;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 3 */
+  -webkit-text-size-adjust: 100%;
+  /* 3 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+/* line 27, ../sass/_normolise.scss */
+body {
+  margin: 0;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+/* line 35, ../sass/_normolise.scss */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+/* line 49, ../sass/_normolise.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+/* line 62, ../sass/_normolise.scss */
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block;
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+/* line 72, ../sass/_normolise.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+/* line 81, ../sass/_normolise.scss */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 92, ../sass/_normolise.scss */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+/* line 105, ../sass/_normolise.scss */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */
+}
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+/* line 115, ../sass/_normolise.scss */
+a:active,
+a:hover {
+  outline-width: 0;
+}
+
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+/* line 125, ../sass/_normolise.scss */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+/* line 135, ../sass/_normolise.scss */
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+/* line 144, ../sass/_normolise.scss */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 154, ../sass/_normolise.scss */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+/* line 165, ../sass/_normolise.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+/* line 173, ../sass/_normolise.scss */
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+/* line 182, ../sass/_normolise.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+/* line 191, ../sass/_normolise.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 199, ../sass/_normolise.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 203, ../sass/_normolise.scss */
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+/* line 214, ../sass/_normolise.scss */
+audio,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+/* line 223, ../sass/_normolise.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+/* line 232, ../sass/_normolise.scss */
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+/* line 240, ../sass/_normolise.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+/* line 252, ../sass/_normolise.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+/* line 268, ../sass/_normolise.scss */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+/* line 278, ../sass/_normolise.scss */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+/* line 289, ../sass/_normolise.scss */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+/* line 300, ../sass/_normolise.scss */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+/* line 312, ../sass/_normolise.scss */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+/* line 323, ../sass/_normolise.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+/* line 336, ../sass/_normolise.scss */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+/* line 350, ../sass/_normolise.scss */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+/* line 359, ../sass/_normolise.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+/* line 368, ../sass/_normolise.scss */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+/* line 378, ../sass/_normolise.scss */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+/* line 388, ../sass/_normolise.scss */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+/* line 397, ../sass/_normolise.scss */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+/* line 407, ../sass/_normolise.scss */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+/* line 420, ../sass/_normolise.scss */
+details,
+menu {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+/* line 429, ../sass/_normolise.scss */
+summary {
+  display: list-item;
+}
+
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+/* line 440, ../sass/_normolise.scss */
+canvas {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+/* line 448, ../sass/_normolise.scss */
+template {
+  display: none;
+}
+
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+/* line 459, ../sass/_normolise.scss */
+[hidden] {
+  display: none;
+}
+
+/* line 16, ../sass/_color.scss */
+.purp {
+  color: #dd055c;
+}
+
+/* line 20, ../sass/_color.scss */
+.gold {
+  color: #fbc731;
+}
+
+/* line 24, ../sass/_color.scss */
+.blue {
+  color: #8be2fc;
+}
+
+@font-face {
+  font-family: 'pdf';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/pfdindisplaypro-reg.ttf");
+}
+@font-face {
+  font-family: 'pdf';
+  font-style: bold;
+  font-weight: 700;
+  src: url("../fonts/pfdindisplaypro-bold.ttf");
+}
+@font-face {
+  font-family: 'pdf';
+  font-style: normal;
+  font-weight: 100;
+  src: url("../fonts/pfdindisplaypro-thin.ttf");
+}
+@font-face {
+  font-family: 'fontAwesom';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/fontawesome-webfont.ttf");
+}
+@font-face {
+  font-family: 'fontAwesom2';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/FontAwesome.otf");
+}
+/* line 1, ../sass/_icons.scss */
+.icon-box {
+  position: relative;
+  padding-left: 50px;
+}
+/* line 4, ../sass/_icons.scss */
+.icon-box::before {
+  content: "";
+  background-image: url("../img/i/top1.png");
+  background-size: 100%;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 0px;
+}
+/* line 13, ../sass/_icons.scss */
+.icon-box:nth-child(2n)::before {
+  background-image: url("../img/i/top2.png");
+}
+/* line 16, ../sass/_icons.scss */
+.icon-box:nth-child(3n)::before {
+  background-image: url("../img/i/top3.png");
+}
+
+/* line 20, ../sass/_icons.scss */
+.block-8 .icon-box {
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/* line 24, ../sass/_icons.scss */
+.block-8 .icon-box::before {
+  background-image: url("../img/i/bl8-i1.png");
+  width: 190px;
+  height: 190px;
+  left: -200px;
+}
+/* line 30, ../sass/_icons.scss */
+.block-8 .icon-box:nth-child(2n)::before {
+  background-image: url("../img/i/bl8-i2.png");
+}
+/* line 33, ../sass/_icons.scss */
+.block-8 .icon-box:nth-child(3n)::before {
+  background-image: url("../img/i/bl8-i3.png");
+}
+/* line 36, ../sass/_icons.scss */
+.block-8 .icon-box:nth-child(4n)::before {
+  background-image: url("../img/i/bl8-i4.png");
+}
+/* line 39, ../sass/_icons.scss */
+.block-8 .icon-box:nth-child(5n)::before {
+  background-image: url("../img/i/bl8-i5.png");
+}
+/* line 42, ../sass/_icons.scss */
+.block-8 .icon-box:nth-child(6n)::before {
+  background-image: url("../img/i/bl8-i6.png");
+}
+
+@media (max-width: 767px) {
+  /* line 49, ../sass/_icons.scss */
+  .block-8 .icon-box {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  /* line 52, ../sass/_icons.scss */
+  .block-8 .icon-box::before {
+    width: 120px;
+    height: 120px;
+    left: -130px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 60, ../sass/_icons.scss */
+  .block-8 .icon-box {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  /* line 63, ../sass/_icons.scss */
+  .block-8 .icon-box::before {
+    width: 110px;
+    height: 110px;
+    left: -120px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 72, ../sass/_icons.scss */
+  .block-8 .icon-box::before {
+    width: 160px;
+    height: 160px;
+    left: -170px;
+  }
+}
+/* line 2, ../sass/_social.scss */
+.soc_bar {
+  text-align: center;
+}
+/* line 4, ../sass/_social.scss */
+.soc_bar a {
+  display: inline-block;
+  width: 56px;
+  height: 56px;
+}
+/* line 8, ../sass/_social.scss */
+.soc_bar a .social_icon {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/*выбор соц сети*/
+/* line 18, ../sass/_social.scss */
+.tqq {
+  background: url(../img/social/tqq.png);
+}
+
+/* line 21, ../sass/_social.scss */
+.wechat {
+  background: url(../img/social/wechat.png);
+}
+
+/* line 24, ../sass/_social.scss */
+.skype {
+  background: url(../img/social/skype.png);
+}
+
+/* line 29, ../sass/_social.scss */
+a:hover .tqq,
+a:active .tqq {
+  background: url(../img/social/tqq_hover.png);
+}
+/* line 32, ../sass/_social.scss */
+a:hover .wechat,
+a:active .wechat {
+  background: url(../img/social/wechat_hover.png);
+}
+/* line 35, ../sass/_social.scss */
+a:hover .skype,
+a:active .skype {
+  background: url(../img/social/skype_hover.png);
+}
+/* line 38, ../sass/_social.scss */
+a:hover .social_icon,
+a:active .social_icon {
+  /*обязательно в конце*/
+  background-size: cover;
+  -webkit-background-size: cover;
+}
+
+/*обязательно в конце*/
+/* line 45, ../sass/_social.scss */
+.social_icon {
+  background-size: cover;
+  -webkit-background-size: cover;
+}
+
+/* line 1, ../sass/_myhover.scss */
+.wrap-effect {
+  position: relative;
+  overflow: hidden;
+}
+
+/*Apollo*/
+/* line 7, ../sass/_myhover.scss */
+figure.effect-apollo img {
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale3d(1.03, 1.03, 1);
+  transform: scale3d(1.03, 1.03, 1);
+}
+
+/* line 13, ../sass/_myhover.scss */
+figure.effect-apollo figcaption::before {
+  position: absolute;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.4);
+  content: '';
+  -webkit-transition: -webkit-transform 0.6s;
+  transition: transform 0.6s;
+  -webkit-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, -100%, 0);
+  transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, -100%, 0);
+}
+
+/* line 27, ../sass/_myhover.scss */
+figure.effect-apollo p {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 3em 1.5em 1.5em 3em;
+  padding: 0 1em;
+  max-width: 300px;
+  border-right: 1px solid #fff;
+  text-align: right;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s;
+  transition: opacity 0.35s;
+}
+
+/* line 40, ../sass/_myhover.scss */
+figure.effect-apollo:hover img {
+  opacity: 0.25;
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+}
+
+/* line 45, ../sass/_myhover.scss */
+figure.effect-apollo:hover figcaption::before {
+  visibility: visible;
+  -webkit-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 110%, 0);
+  transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 110%, 0);
+}
+
+/* line 50, ../sass/_myhover.scss */
+figure.effect-apollo:hover p {
+  opacity: 1;
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+/* line 1, ../sass/_bootstrap-modal.scss */
+.modal-open {
+  overflow: hidden;
+}
+
+/* line 4, ../sass/_bootstrap-modal.scss */
+.modal {
+  display: none;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+}
+
+/* line 16, ../sass/_bootstrap-modal.scss */
+.modal.fade .modal-dialog {
+  -webkit-transform: translate(0, -25%);
+  -ms-transform: translate(0, -25%);
+  -o-transform: translate(0, -25%);
+  transform: translate(0, -25%);
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  -o-transition: -o-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+}
+
+/* line 25, ../sass/_bootstrap-modal.scss */
+.modal.in .modal-dialog {
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+/* line 31, ../sass/_bootstrap-modal.scss */
+.modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* line 35, ../sass/_bootstrap-modal.scss */
+.modal-dialog {
+  position: relative;
+  width: auto;
+  margin: 10px;
+}
+
+/* line 40, ../sass/_bootstrap-modal.scss */
+.modal-content {
+  position: relative;
+  background-color: #ffffff;
+  border: 1px solid #999999;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  outline: 0;
+}
+
+/* line 52, ../sass/_bootstrap-modal.scss */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  background-color: #000000;
+}
+
+/* line 61, ../sass/_bootstrap-modal.scss */
+.modal-backdrop.fade {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+/* line 65, ../sass/_bootstrap-modal.scss */
+.modal-backdrop.in {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+/* line 69, ../sass/_bootstrap-modal.scss */
+.modal-header {
+  padding: 15px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* line 73, ../sass/_bootstrap-modal.scss */
+.modal-header .close {
+  margin-top: -2px;
+}
+
+/* line 76, ../sass/_bootstrap-modal.scss */
+.modal-title {
+  margin: 0;
+  line-height: 1.42857143;
+}
+
+/* line 80, ../sass/_bootstrap-modal.scss */
+.modal-body {
+  position: relative;
+  padding: 20px;
+}
+
+/* line 84, ../sass/_bootstrap-modal.scss */
+.modal-footer {
+  padding: 20px;
+  text-align: right;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* line 89, ../sass/_bootstrap-modal.scss */
+.modal-footer .btn + .btn {
+  margin-left: 5px;
+  margin-bottom: 0;
+}
+
+/* line 93, ../sass/_bootstrap-modal.scss */
+.modal-footer .btn-group .btn + .btn {
+  margin-left: -1px;
+}
+
+/* line 96, ../sass/_bootstrap-modal.scss */
+.modal-footer .btn-block + .btn-block {
+  margin-left: 0;
+}
+
+/* line 99, ../sass/_bootstrap-modal.scss */
+.modal-scrollbar-measure {
+  position: absolute;
+  top: -9999px;
+  width: 50px;
+  height: 50px;
+  overflow: scroll;
+}
+
+@media (min-width: 768px) {
+  /* line 107, ../sass/_bootstrap-modal.scss */
+  .modal-dialog {
+    width: 600px;
+    margin: 30px auto;
+  }
+
+  /* line 111, ../sass/_bootstrap-modal.scss */
+  .modal-content {
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+
+  /* line 115, ../sass/_bootstrap-modal.scss */
+  .modal-sm {
+    width: 300px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 120, ../sass/_bootstrap-modal.scss */
+  .modal-lg {
+    width: 900px;
+  }
+}
+/* line 2, ../sass/_modal.scss */
+.modal-dialog {
+  width: 55%;
+}
+
+/* line 5, ../sass/_modal.scss */
+.modal-content {
+  border-radius: 0;
+}
+
+/* line 8, ../sass/_modal.scss */
+.modal-header {
+  border: none;
+  text-align: right;
+  padding: 20px;
+}
+
+/* line 13, ../sass/_modal.scss */
+.modal-header .close {
+  background-color: #ffffff;
+}
+/* line 15, ../sass/_modal.scss */
+.modal-header .close img {
+  width: 20px;
+}
+
+/* line 19, ../sass/_modal.scss */
+.modal-body {
+  padding: 0 7% 7% 7%;
+}
+/* line 21, ../sass/_modal.scss */
+.modal-body .left-wrap {
+  width: 63%;
+  text-align: center;
+}
+/* line 24, ../sass/_modal.scss */
+.modal-body .left-wrap .title {
+  color: #dd055c;
+  font-size: 2.7rem;
+  line-height: 3.2rem;
+}
+/* line 29, ../sass/_modal.scss */
+.modal-body .left-wrap .desc {
+  color: #3d3d3d;
+  padding: 0px 10%;
+  line-height: 2.3rem;
+}
+/* line 34, ../sass/_modal.scss */
+.modal-body .left-wrap .price {
+  float: left;
+  width: 50%;
+  padding: 10px 10px;
+  font-size: 2.3rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 600;
+}
+/* line 41, ../sass/_modal.scss */
+.modal-body .left-wrap .price.old {
+  text-decoration: line-through;
+  text-align: right;
+  color: #3d3d3d;
+}
+/* line 46, ../sass/_modal.scss */
+.modal-body .left-wrap .price.new {
+  padding-left: 25px;
+  text-align: left;
+  color: #61a626;
+}
+/* line 52, ../sass/_modal.scss */
+.modal-body .left-wrap .purp {
+  font-size: 1.2rem;
+  padding-top: 15px;
+}
+/* line 57, ../sass/_modal.scss */
+.modal-body form {
+  margin-top: 45px;
+}
+/* line 59, ../sass/_modal.scss */
+.modal-body form input,
+.modal-body form select {
+  width: 70%;
+  border-radius: 60px;
+  border-width: 2px;
+  border-color: #64637d;
+  font-size: 1.5rem;
+  padding: 12px 25px 10px 25px;
+}
+/* line 68, ../sass/_modal.scss */
+.modal-body form .button {
+  width: 70%;
+  padding: 16px 25px 14px 25px;
+  background-color: #ff0a32;
+}
+/* line 72, ../sass/_modal.scss */
+.modal-body form .button:hover {
+  background-color: #d00a2a;
+}
+/* line 77, ../sass/_modal.scss */
+.modal-body .product {
+  position: absolute;
+  top: 7%;
+  left: 62%;
+  width: 35%;
+}
+/* line 82, ../sass/_modal.scss */
+.modal-body .product img {
+  width: 90%;
+}
+/* line 86, ../sass/_modal.scss */
+.modal-body .discount {
+  width: 80px;
+  height: 100px;
+  background-size: 100%;
+  padding-top: 45px;
+  font-size: 1.8rem;
+  top: -5%;
+  right: 30%;
+}
+
+@media (max-width: 768px) {
+  /* line 98, ../sass/_modal.scss */
+  .modal-body .left-wrap {
+    width: 100%;
+  }
+  /* line 100, ../sass/_modal.scss */
+  .modal-body .left-wrap .title {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+  /* line 104, ../sass/_modal.scss */
+  .modal-body .left-wrap .desc {
+    font-size: 1.2rem;
+    font-size: 1.4rem;
+  }
+
+  /* line 110, ../sass/_modal.scss */
+  .modal-dialog {
+    width: 500px;
+    margin: 20px auto;
+  }
+}
+@media (max-width: 540px) {
+  /* line 116, ../sass/_modal.scss */
+  .modal-dialog {
+    width: 340px;
+    margin: 10px auto;
+  }
+}
+@media (max-width: 360px) {
+  /* line 124, ../sass/_modal.scss */
+  .modal-body .left-wrap {
+    width: 100%;
+  }
+  /* line 126, ../sass/_modal.scss */
+  .modal-body .left-wrap .title {
+    font-size: 2.0rem;
+    line-height: 2.3rem;
+  }
+  /* line 130, ../sass/_modal.scss */
+  .modal-body .left-wrap .desc {
+    font-size: 1.4rem;
+    font-size: 1.8rem;
+  }
+
+  /* line 136, ../sass/_modal.scss */
+  .modal-dialog {
+    width: 340px;
+    margin: 5px auto;
+  }
+}
+@media (max-width: 1200px) {
+  /* line 143, ../sass/_modal.scss */
+  .modal-header .close img {
+    width: 15px;
+  }
+
+  /* line 148, ../sass/_modal.scss */
+  .modal-body .left-wrap {
+    width: 100%;
+  }
+  /* line 150, ../sass/_modal.scss */
+  .modal-body .left-wrap .title {
+    font-size: 2.3rem;
+    line-height: 2.8rem;
+  }
+  /* line 155, ../sass/_modal.scss */
+  .modal-body .product {
+    display: none;
+  }
+}
+@media (max-width: 1500px) {
+  /* line 164, ../sass/_modal.scss */
+  .modal-body .product {
+    top: 15%;
+    left: 60%;
+    width: 40%;
+  }
+  /* line 168, ../sass/_modal.scss */
+  .modal-body .product img {
+    width: 95%;
+  }
+}
+/* line 1, ../sass/_components.scss */
+.fix-parant {
+  padding-top: 90px;
+}
+/* line 3, ../sass/_components.scss */
+.fix-parant .fix {
+  position: fixed;
+  height: 90px;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+}
+
+/* line 12, ../sass/_components.scss */
+.button {
+  background-color: #61a626;
+  color: #ffffff;
+  padding: 15px 25px;
+  border-radius: 30px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  text-decoration: none;
+  outline: none;
+  display: block;
+  text-align: center;
+  transition: all 500ms ease 0s;
+}
+/* line 27, ../sass/_components.scss */
+.button:hover {
+  background-color: #406e19;
+  color: #fcfcfc;
+  text-decoration: none;
+}
+/* line 32, ../sass/_components.scss */
+.button:active, .button:visited, .button:link {
+  text-decoration: none;
+  outline: none;
+  color: #ffffff;
+}
+
+/* line 40, ../sass/_components.scss */
+.discount {
+  background: url("../img/discount.png") no-repeat center top;
+  background-size: 100%;
+  width: 80px;
+  height: 100px;
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+  padding-top: 43px;
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #f2f2f2;
+  top: 50px;
+  right: 60px;
+}
+
+/* line 55, ../sass/_components.scss */
+.title {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* line 62, ../sass/_components.scss */
+.desc {
+  font-size: 1.7rem;
+  line-height: 2rem;
+}
+
+/* line 66, ../sass/_components.scss */
+.bold {
+  font-weight: bold;
+  font-size: 2.2rem;
+  line-height: 2.8rem;
+  text-transform: uppercase;
+}
+
+/* line 72, ../sass/_components.scss */
+.covered {
+  background-size: cover;
+  -webkit-background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+/* line 80, ../sass/_components.scss */
+.menu ul {
+  margin-top: 0;
+  padding: 0;
+}
+/* line 84, ../sass/_components.scss */
+.menu li {
+  width: 33%;
+  display: inline-block;
+  float: left;
+}
+/* line 88, ../sass/_components.scss */
+.menu li:first-letter {
+  text-transform: uppercase;
+}
+
+/* line 93, ../sass/_components.scss */
+form {
+  text-align: center;
+}
+/* line 95, ../sass/_components.scss */
+form input,
+form select {
+  width: 60%;
+  margin: 6px 0;
+  border-radius: 10px;
+  border-width: 0;
+  outline: none;
+  max-width: 100%;
+  color: gray;
+}
+/* line 105, ../sass/_components.scss */
+form .button {
+  width: 60%;
+  margin: 6px 0;
+  display: inline-block;
+  max-width: 100%;
+  border-width: 0;
+}
+
+/* line 113, ../sass/_components.scss */
+.centred {
+  text-align: center;
+}
+/* line 115, ../sass/_components.scss */
+.centred > * {
+  float: none;
+  vertical-align: top;
+  display: inline-block;
+}
+
+/*.logo{
+  height:auto;
+  div{
+    top: -25px;
+    width: 100%;
+    height: 120px;
+    position: absolute;
+    background: url('../img/logo.png') no-repeat right top;
+  }  
+}*/
+/* line 15, ../sass/style.scss */
+html {
+  font-size: 14px;
+  font-family: "PT Sans", sans-serif;
+  color: #ffffff;
+  min-width: 320px;
+}
+
+/* line 21, ../sass/style.scss */
+body {
+  background-color: #232323;
+  overflow-x: hidden;
+}
+
+/* line 25, ../sass/style.scss */
+section,
+footer,
+header {
+  overflow-x: hidden;
+}
+
+/* line 30, ../sass/style.scss */
+p {
+  padding-bottom: 20px;
+  margin: 0;
+}
+
+/* line 34, ../sass/style.scss */
+h1, h2, h3, h4 {
+  padding-bottom: 30px;
+  margin: 0;
+}
+
+/* line 38, ../sass/style.scss */
+section {
+  padding: 80px 0;
+}
+
+/* line 41, ../sass/style.scss */
+footer {
+  text-align: center;
+}
+
+/* line 44, ../sass/style.scss */
+button {
+  border: none;
+  outline: none;
+}
+
+/*a{
+  &:hover,
+  &:active,
+  &:visited,
+  &:link{
+    outline:none;
+  }
+}*/
+/* line 56, ../sass/style.scss */
+header {
+  padding-top: 25px;
+  background-color: #232323;
+  padding-top: 23px;
+}
+/* line 62, ../sass/style.scss */
+header .menu ul :nth-child(2n) {
+  margin-left: -40px;
+}
+/* line 65, ../sass/style.scss */
+header .menu ul li {
+  font-size: 1.1rem;
+  line-height: 1.4rem;
+}
+/* line 68, ../sass/style.scss */
+header .menu ul li span {
+  font-weight: bold;
+}
+
+/* line 75, ../sass/style.scss */
+.block-1,
+.block-6,
+.block-12 {
+  background-image: url("../img/bg-1.jpg");
+}
+/* line 79, ../sass/style.scss */
+.block-1 .product,
+.block-6 .product,
+.block-12 .product {
+  right: -280px;
+  padding-top: 60px;
+}
+/* line 82, ../sass/style.scss */
+.block-1 .product img,
+.block-6 .product img,
+.block-12 .product img {
+  margin-left: 150px;
+  width: 80%;
+}
+/* line 87, ../sass/style.scss */
+.block-1 .sale,
+.block-6 .sale,
+.block-12 .sale {
+  right: -280px;
+  color: #3d3d3d;
+  text-align: center;
+}
+/* line 91, ../sass/style.scss */
+.block-1 .sale .title,
+.block-6 .sale .title,
+.block-12 .sale .title {
+  font-size: 3.3rem;
+}
+/* line 94, ../sass/style.scss */
+.block-1 .sale .desc,
+.block-6 .sale .desc,
+.block-12 .sale .desc {
+  line-height: 2.3rem;
+}
+/* line 97, ../sass/style.scss */
+.block-1 .sale .price,
+.block-6 .sale .price,
+.block-12 .sale .price {
+  float: left;
+  font-size: 2.6rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+}
+/* line 102, ../sass/style.scss */
+.block-1 .sale .price.old,
+.block-6 .sale .price.old,
+.block-12 .sale .price.old {
+  width: 63%;
+  text-align: right;
+}
+/* line 105, ../sass/style.scss */
+.block-1 .sale .price.old span.cros,
+.block-6 .sale .price.old span.cros,
+.block-12 .sale .price.old span.cros {
+  text-decoration: line-through;
+}
+/* line 109, ../sass/style.scss */
+.block-1 .sale .price.new,
+.block-6 .sale .price.new,
+.block-12 .sale .price.new {
+  width: 37%;
+  padding-left: 15px;
+  text-align: left;
+  color: #61a626;
+}
+/* line 116, ../sass/style.scss */
+.block-1 .sale form,
+.block-6 .sale form,
+.block-12 .sale form {
+  margin-top: 75px;
+  text-align: center;
+}
+/* line 119, ../sass/style.scss */
+.block-1 .sale form input,
+.block-1 .sale form select,
+.block-6 .sale form input,
+.block-6 .sale form select,
+.block-12 .sale form input,
+.block-12 .sale form select {
+  width: 470px;
+  border-radius: 60px;
+  border-width: 2px;
+  border-color: #64637d;
+  font-size: 1.7rem;
+  padding: 18px 60px 16px 60px;
+}
+/* line 128, ../sass/style.scss */
+.block-1 .sale form .button,
+.block-6 .sale form .button,
+.block-12 .sale form .button {
+  width: 470px;
+  padding: 22px 60px 20px 60px;
+  background-color: #ff0a32;
+}
+/* line 132, ../sass/style.scss */
+.block-1 .sale form .button:hover,
+.block-6 .sale form .button:hover,
+.block-12 .sale form .button:hover {
+  background-color: #d00a2a;
+}
+
+/* line 139, ../sass/style.scss */
+.block-2 {
+  background-image: url("../img/bg-2.jpg");
+  text-align: center;
+}
+/* line 142, ../sass/style.scss */
+.block-2 img {
+  width: 100%;
+}
+/* line 145, ../sass/style.scss */
+.block-2 .desc {
+  padding-top: 15px;
+  padding-bottom: 0;
+}
+
+/* line 150, ../sass/style.scss */
+.block-3 {
+  background-image: url("../img/bg-3.jpg");
+}
+/* line 152, ../sass/style.scss */
+.block-3 .title {
+  color: #000000;
+}
+/* line 155, ../sass/style.scss */
+.block-3 img {
+  width: 100%;
+}
+
+/* line 159, ../sass/style.scss */
+.block-4 {
+  background-image: url("../img/bg-4.jpg");
+  text-align: center;
+  color: #232323;
+  padding-bottom: 600px;
+}
+/* line 163, ../sass/style.scss */
+.block-4 p {
+  padding-bottom: 30px;
+}
+
+/* line 168, ../sass/style.scss */
+.block-5 {
+  background-image: url("../img/bg-5.jpg");
+  color: #232323;
+}
+/* line 171, ../sass/style.scss */
+.block-5 img {
+  width: 100%;
+  margin-bottom: -80px;
+  margin-left: -20px;
+}
+/* line 176, ../sass/style.scss */
+.block-5 .desc {
+  padding-top: 30px;
+  letter-spacing: 0.02em;
+}
+/* line 179, ../sass/style.scss */
+.block-5 .desc .doc-name {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-top: 25px;
+  padding-bottom: 10px;
+}
+
+/* line 187, ../sass/style.scss */
+.block-6 {
+  background-image: url("../img/bg-6.jpg");
+}
+
+/* line 190, ../sass/style.scss */
+.block-7 {
+  background-image: url("../img/bg-7.jpg");
+  text-align: center;
+  color: #232323;
+}
+/* line 194, ../sass/style.scss */
+.block-7 .row > .desc {
+  padding-top: 0;
+  padding-bottom: 40px;
+}
+/* line 198, ../sass/style.scss */
+.block-7 img {
+  width: 90%;
+}
+/* line 201, ../sass/style.scss */
+.block-7 .desc {
+  padding-top: 15px;
+  padding-bottom: 0;
+}
+/* line 205, ../sass/style.scss */
+.block-7 .centred {
+  padding-top: 20px;
+}
+
+/* line 209, ../sass/style.scss */
+.block-8 {
+  background-image: url("../img/bg-8.jpg");
+  text-align: center;
+  color: #232323;
+}
+/* line 213, ../sass/style.scss */
+.block-8 .title {
+  padding-bottom: 0;
+}
+/* line 216, ../sass/style.scss */
+.block-8 .desc {
+  padding-top: 40px;
+}
+/* line 218, ../sass/style.scss */
+.block-8 .desc span {
+  font-weight: bold;
+}
+/* line 222, ../sass/style.scss */
+.block-8 .desc.icon-box {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  text-align: left;
+}
+/* line 226, ../sass/style.scss */
+.block-8 .desc.icon-box .bold {
+  text-transform: none;
+}
+/* line 228, ../sass/style.scss */
+.block-8 .desc.icon-box .bold:first-letter {
+  text-transform: uppercase;
+}
+
+/* line 234, ../sass/style.scss */
+.block-9 {
+  background-image: url("../img/bg-9.jpg");
+}
+/* line 237, ../sass/style.scss */
+.block-9 .desc span {
+  white-space: nowrap;
+}
+/* line 241, ../sass/style.scss */
+.block-9 .bold {
+  padding-left: 12%;
+  padding-right: 1%;
+  font-size: 2.1rem;
+}
+/* line 246, ../sass/style.scss */
+.block-9 .left {
+  text-align: right;
+  padding-left: 12%;
+  padding-right: 5%;
+}
+/* line 250, ../sass/style.scss */
+.block-9 .left img {
+  width: 80%;
+  height: auto;
+  padding-bottom: 30px;
+}
+/* line 255, ../sass/style.scss */
+.block-9 .left .desc {
+  text-align: left;
+}
+/* line 260, ../sass/style.scss */
+.block-9 .product img {
+  width: 87%;
+  margin-top: -40px;
+  padding-left: 15px;
+}
+
+/* line 267, ../sass/style.scss */
+.block-10 {
+  background-image: url("../img/bg-10.jpg");
+  color: #232323;
+}
+/* line 270, ../sass/style.scss */
+.block-10 img {
+  width: 90%;
+}
+/* line 273, ../sass/style.scss */
+.block-10 .desc {
+  padding-top: 15px;
+  padding-bottom: 0;
+}
+/* line 277, ../sass/style.scss */
+.block-10 .name {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+/* line 282, ../sass/style.scss */
+.block-11 {
+  background-image: url("../img/bg-11.jpg");
+  text-align: center;
+  color: #232323;
+}
+/* line 286, ../sass/style.scss */
+.block-11 .desc {
+  padding-bottom: 30px;
+}
+/* line 289, ../sass/style.scss */
+.block-11 audio {
+  cursor: pointer;
+  max-width: 100%;
+}
+/* line 292, ../sass/style.scss */
+.block-11 audio:hover {
+  cursor: pointer;
+}
+/* line 295, ../sass/style.scss */
+.block-11 audio.left {
+  float: left;
+}
+/* line 298, ../sass/style.scss */
+.block-11 audio.right {
+  float: right;
+}
+
+/* line 303, ../sass/style.scss */
+.block-12 {
+  background-image: url("../img/bg-12.jpg");
+}
+
+/* line 306, ../sass/style.scss */
+footer {
+  text-align: center;
+  overflow-x: hidden;
+  padding: 40px 0;
+  background-color: #000;
+  color: #d7d7d7;
+  font-size: 1.2rem;
+}
+/* line 313, ../sass/style.scss */
+footer a {
+  color: #77acdc;
+}
+
+@media (max-width: 767px) {
+  /* line 319, ../sass/style.scss */
+  .fix-parant {
+    padding-top: 70px;
+  }
+  /* line 321, ../sass/style.scss */
+  .fix-parant .fix {
+    height: 70px;
+  }
+
+  /* line 325, ../sass/style.scss */
+  .button {
+    padding: 10px 20px;
+    max-width: 400px;
+    margin: auto;
+  }
+
+  /* line 330, ../sass/style.scss */
+  header {
+    padding-top: 15px;
+  }
+
+  /* line 333, ../sass/style.scss */
+  html {
+    font-size: 12px;
+  }
+
+  /* line 336, ../sass/style.scss */
+  p {
+    padding-bottom: 15px;
+  }
+
+  /* line 339, ../sass/style.scss */
+  h1, h2, h3, h4 {
+    padding-bottom: 20px;
+  }
+
+  /* line 342, ../sass/style.scss */
+  section {
+    padding: 40px 0;
+  }
+
+  /* line 345, ../sass/style.scss */
+  .title {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.9rem;
+    line-height: 2.2rem;
+  }
+
+  /* line 350, ../sass/style.scss */
+  .desc {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+
+  /* line 354, ../sass/style.scss */
+  .bold {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+
+  /* line 358, ../sass/style.scss */
+  .block-1,
+  .block-6,
+  .block-12 {
+    background-image: url("../img/bg-1-xs.jpg");
+  }
+  /* line 362, ../sass/style.scss */
+  .block-1 .product,
+  .block-6 .product,
+  .block-12 .product {
+    right: auto;
+    padding-top: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  /* line 367, ../sass/style.scss */
+  .block-1 .product img,
+  .block-6 .product img,
+  .block-12 .product img {
+    width: 50%;
+    padding-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 374, ../sass/style.scss */
+  .block-1 .sale,
+  .block-6 .sale,
+  .block-12 .sale {
+    right: 0px;
+  }
+  /* line 376, ../sass/style.scss */
+  .block-1 .sale .title,
+  .block-6 .sale .title,
+  .block-12 .sale .title {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    letter-spacing: -0.9px;
+  }
+  /* line 381, ../sass/style.scss */
+  .block-1 .sale .price,
+  .block-6 .sale .price,
+  .block-12 .sale .price {
+    font-size: 1.5rem;
+  }
+  /* line 383, ../sass/style.scss */
+  .block-1 .sale .price.old,
+  .block-6 .sale .price.old,
+  .block-12 .sale .price.old {
+    width: 50%;
+  }
+  /* line 386, ../sass/style.scss */
+  .block-1 .sale .price.new,
+  .block-6 .sale .price.new,
+  .block-12 .sale .price.new {
+    width: 50%;
+  }
+  /* line 390, ../sass/style.scss */
+  .block-1 .sale form,
+  .block-6 .sale form,
+  .block-12 .sale form {
+    margin-top: 40px;
+  }
+  /* line 392, ../sass/style.scss */
+  .block-1 .sale form input,
+  .block-1 .sale form select,
+  .block-6 .sale form input,
+  .block-6 .sale form select,
+  .block-12 .sale form input,
+  .block-12 .sale form select {
+    width: 290px;
+    font-size: 1.5rem;
+    padding: 12px 25px 11px 25px;
+  }
+  /* line 398, ../sass/style.scss */
+  .block-1 .sale form .button,
+  .block-6 .sale form .button,
+  .block-12 .sale form .button {
+    width: 290px;
+    padding: 16px 25px 15px 25px;
+  }
+
+  /* line 405, ../sass/style.scss */
+  .block-6 {
+    background-image: url("../img/bg-6-xs.jpg");
+  }
+
+  /* line 408, ../sass/style.scss */
+  .block-12 {
+    background-image: url("../img/bg-12-xs.jpg");
+  }
+
+  /* line 411, ../sass/style.scss */
+  .discount {
+    background-size: 100%;
+    width: 64px;
+    height: 80px;
+    padding-top: 35px;
+    font-size: 1.4rem;
+    top: 5px;
+    right: 35%;
+  }
+
+  /* line 421, ../sass/style.scss */
+  .block-2 .title {
+    padding-bottom: 40px;
+  }
+  /* line 424, ../sass/style.scss */
+  .block-2 .desc {
+    padding-bottom: 35px;
+    font-size: 1.7rem;
+  }
+
+  /* line 430, ../sass/style.scss */
+  .block-3 img {
+    padding-top: 20px;
+  }
+
+  /* line 434, ../sass/style.scss */
+  .block-4 {
+    background-image: url("../img/bg-4-xs.jpg");
+    padding-bottom: 580px;
+    background-position-y: 100%;
+  }
+
+  /* line 440, ../sass/style.scss */
+  .block-5 img {
+    width: 50%;
+    margin-bottom: -40px;
+    margin-left: 40%;
+  }
+  /* line 445, ../sass/style.scss */
+  .block-5 .desc {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    padding-top: 20px;
+  }
+
+  /* line 452, ../sass/style.scss */
+  .block-7 .title {
+    padding-bottom: 40px;
+  }
+  /* line 455, ../sass/style.scss */
+  .block-7 .desc {
+    padding-bottom: 35px;
+    font-size: 1.7rem;
+  }
+
+  /* line 461, ../sass/style.scss */
+  .block-8 .desc {
+    font-size: 1.3rem;
+  }
+  /* line 463, ../sass/style.scss */
+  .block-8 .desc span {
+    font-weight: bold;
+  }
+  /* line 467, ../sass/style.scss */
+  .block-8 .desc.icon-box {
+    padding-left: 5%;
+    padding-right: 10%;
+    font-size: 1.3rem;
+  }
+
+  /* line 474, ../sass/style.scss */
+  .block-9 .bold {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+  /* line 481, ../sass/style.scss */
+  .block-9 .left {
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  /* line 485, ../sass/style.scss */
+  .block-9 .left img {
+    width: 60%;
+    padding-bottom: 17px;
+  }
+  /* line 489, ../sass/style.scss */
+  .block-9 .left .desc {
+    text-align: left;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+  }
+  /* line 496, ../sass/style.scss */
+  .block-9 .product img {
+    width: 90%;
+    padding-left: 0;
+    margin-top: -30px;
+  }
+
+  /* line 504, ../sass/style.scss */
+  .block-10 img {
+    width: 80%;
+    padding-top: 30px;
+  }
+  /* line 509, ../sass/style.scss */
+  .block-10 .name {
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
+
+  /* line 515, ../sass/style.scss */
+  .block-11 .desc {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  /* line 519, ../sass/style.scss */
+  .block-11 audio {
+    margin-bottom: 20px;
+  }
+  /* line 521, ../sass/style.scss */
+  .block-11 audio.left, .block-11 audio.right {
+    float: none;
+  }
+}
+@media (max-width: 620px) {
+  /* line 529, ../sass/style.scss */
+  .block-4 {
+    background-image: url("../img/bg-4-xs.jpg");
+    padding-bottom: 450px;
+    background-position-y: 100%;
+  }
+
+  /* line 535, ../sass/style.scss */
+  .block-8 .desc.icon-box {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media (max-width: 420px) {
+  /* line 542, ../sass/style.scss */
+  .block-1,
+  .block-6,
+  .block-12 {
+    padding-bottom: 450px;
+  }
+  /* line 547, ../sass/style.scss */
+  .block-1 .product img,
+  .block-6 .product img,
+  .block-12 .product img {
+    width: 75%;
+  }
+
+  /* line 552, ../sass/style.scss */
+  .discount {
+    right: 32%;
+  }
+
+  /* line 557, ../sass/style.scss */
+  .block-2 .desc,
+  .block-7 .desc {
+    font-size: 1.5rem;
+  }
+
+  /* line 561, ../sass/style.scss */
+  .block-4 {
+    background-image: url("../img/bg-4-xs.jpg");
+    padding-bottom: 400px;
+    background-position-y: 100%;
+  }
+
+  /* line 567, ../sass/style.scss */
+  .block-5 img {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 574, ../sass/style.scss */
+  .fix-parant {
+    padding-top: 70px;
+  }
+  /* line 576, ../sass/style.scss */
+  .fix-parant .fix {
+    height: 70px;
+  }
+
+  /* line 580, ../sass/style.scss */
+  .button {
+    padding: 10px 20px;
+    border-radius: 30px;
+  }
+
+  /* line 584, ../sass/style.scss */
+  html {
+    font-size: 12px;
+  }
+
+  /* line 587, ../sass/style.scss */
+  p {
+    padding-bottom: 12px;
+  }
+
+  /* line 590, ../sass/style.scss */
+  h1, h2, h3, h4 {
+    padding-bottom: 17px;
+  }
+
+  /* line 593, ../sass/style.scss */
+  section {
+    padding: 40px 0;
+  }
+
+  /* line 596, ../sass/style.scss */
+  header {
+    padding-top: 15px;
+  }
+  /* line 600, ../sass/style.scss */
+  header .menu ul :nth-child(2n) {
+    margin-left: -20px;
+  }
+  /* line 603, ../sass/style.scss */
+  header .menu ul :nth-child(3n) {
+    margin-left: 20px;
+  }
+
+  /* line 609, ../sass/style.scss */
+  .block-1,
+  .block-6,
+  .block-12 {
+    background-image: url("../img/bg-1-sm.jpg");
+  }
+  /* line 613, ../sass/style.scss */
+  .block-1 .product,
+  .block-6 .product,
+  .block-12 .product {
+    right: auto;
+    padding-top: 50px;
+  }
+  /* line 616, ../sass/style.scss */
+  .block-1 .product img,
+  .block-6 .product img,
+  .block-12 .product img {
+    width: 97%;
+    padding-top: 0px;
+    margin-left: 100px;
+  }
+  /* line 622, ../sass/style.scss */
+  .block-1 .sale,
+  .block-6 .sale,
+  .block-12 .sale {
+    right: -30px;
+  }
+  /* line 624, ../sass/style.scss */
+  .block-1 .sale .title,
+  .block-6 .sale .title,
+  .block-12 .sale .title {
+    font-size: 2.5rem;
+    letter-spacing: -0.9px;
+  }
+  /* line 628, ../sass/style.scss */
+  .block-1 .sale .desc,
+  .block-6 .sale .desc,
+  .block-12 .sale .desc {
+    line-height: 2.1rem;
+  }
+  /* line 631, ../sass/style.scss */
+  .block-1 .sale .price,
+  .block-6 .sale .price,
+  .block-12 .sale .price {
+    font-size: 1.8rem;
+  }
+  /* line 633, ../sass/style.scss */
+  .block-1 .sale .price.old,
+  .block-6 .sale .price.old,
+  .block-12 .sale .price.old {
+    width: 60%;
+  }
+  /* line 636, ../sass/style.scss */
+  .block-1 .sale .price.new,
+  .block-6 .sale .price.new,
+  .block-12 .sale .price.new {
+    width: 40%;
+  }
+  /* line 640, ../sass/style.scss */
+  .block-1 .sale form,
+  .block-6 .sale form,
+  .block-12 .sale form {
+    margin-top: 40px;
+  }
+  /* line 642, ../sass/style.scss */
+  .block-1 .sale form input,
+  .block-1 .sale form select,
+  .block-6 .sale form input,
+  .block-6 .sale form select,
+  .block-12 .sale form input,
+  .block-12 .sale form select {
+    width: 290px;
+    font-size: 1.5rem;
+    padding: 12px 25px 11px 25px;
+  }
+  /* line 648, ../sass/style.scss */
+  .block-1 .sale form .button,
+  .block-6 .sale form .button,
+  .block-12 .sale form .button {
+    width: 290px;
+    padding: 16px 25px 15px 25px;
+  }
+
+  /* line 655, ../sass/style.scss */
+  .block-6 {
+    background-image: url("../img/bg-6-sm.jpg");
+  }
+
+  /* line 658, ../sass/style.scss */
+  .block-12 {
+    background-image: url("../img/bg-12-sm.jpg");
+  }
+
+  /* line 661, ../sass/style.scss */
+  .discount {
+    top: 25px;
+    right: -10px;
+  }
+
+  /* line 666, ../sass/style.scss */
+  .block-2 .title {
+    font-size: 2.1rem;
+    letter-spacing: -0.7px;
+  }
+
+  /* line 672, ../sass/style.scss */
+  .block-5 img {
+    margin-bottom: -40px;
+  }
+  /* line 675, ../sass/style.scss */
+  .block-5 .desc {
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    padding-top: 10px;
+    letter-spacing: -0.5px;
+  }
+
+  /* line 683, ../sass/style.scss */
+  .block-9 .bold {
+    padding-left: 10%;
+    padding-top: 10px;
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+  }
+  /* line 690, ../sass/style.scss */
+  .block-9 .left img {
+    padding-bottom: 17px;
+  }
+  /* line 693, ../sass/style.scss */
+  .block-9 .left .desc {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+  /* line 699, ../sass/style.scss */
+  .block-9 .product img {
+    width: 90%;
+    padding-left: 0;
+    margin-top: -30px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 710, ../sass/style.scss */
+  .fix-parant {
+    padding-top: 70px;
+  }
+  /* line 712, ../sass/style.scss */
+  .fix-parant .fix {
+    height: 70px;
+  }
+
+  /* line 716, ../sass/style.scss */
+  .button {
+    padding: 10px 20px;
+    border-radius: 30px;
+  }
+
+  /* line 720, ../sass/style.scss */
+  html {
+    font-size: 13px;
+  }
+
+  /* line 723, ../sass/style.scss */
+  p {
+    padding-bottom: 15px;
+  }
+
+  /* line 726, ../sass/style.scss */
+  h1, h2, h3, h4 {
+    padding-bottom: 20px;
+  }
+
+  /* line 729, ../sass/style.scss */
+  section {
+    padding: 50px 0;
+  }
+
+  /* line 732, ../sass/style.scss */
+  header {
+    padding-top: 15px;
+  }
+  /* line 736, ../sass/style.scss */
+  header .menu ul :nth-child(2n) {
+    margin-left: -40px;
+  }
+  /* line 739, ../sass/style.scss */
+  header .menu ul li {
+    line-height: 1.2rem;
+  }
+
+  /* line 748, ../sass/style.scss */
+  .block-1 .product,
+  .block-6 .product,
+  .block-12 .product {
+    right: -170px;
+  }
+  /* line 750, ../sass/style.scss */
+  .block-1 .product img,
+  .block-6 .product img,
+  .block-12 .product img {
+    width: 64%;
+    padding-top: 80px;
+  }
+  /* line 755, ../sass/style.scss */
+  .block-1 .sale,
+  .block-6 .sale,
+  .block-12 .sale {
+    right: -60px;
+  }
+  /* line 757, ../sass/style.scss */
+  .block-1 .sale .title,
+  .block-6 .sale .title,
+  .block-12 .sale .title {
+    font-size: 2.6rem;
+  }
+  /* line 760, ../sass/style.scss */
+  .block-1 .sale .desc,
+  .block-6 .sale .desc,
+  .block-12 .sale .desc {
+    line-height: 2.1rem;
+  }
+  /* line 763, ../sass/style.scss */
+  .block-1 .sale .price,
+  .block-6 .sale .price,
+  .block-12 .sale .price {
+    font-size: 2.0rem;
+  }
+  /* line 765, ../sass/style.scss */
+  .block-1 .sale .price.old,
+  .block-6 .sale .price.old,
+  .block-12 .sale .price.old {
+    width: 60%;
+  }
+  /* line 768, ../sass/style.scss */
+  .block-1 .sale .price.new,
+  .block-6 .sale .price.new,
+  .block-12 .sale .price.new {
+    width: 40%;
+  }
+  /* line 772, ../sass/style.scss */
+  .block-1 .sale form,
+  .block-6 .sale form,
+  .block-12 .sale form {
+    margin-top: 50px;
+  }
+  /* line 774, ../sass/style.scss */
+  .block-1 .sale form input,
+  .block-1 .sale form select,
+  .block-6 .sale form input,
+  .block-6 .sale form select,
+  .block-12 .sale form input,
+  .block-12 .sale form select {
+    width: 340px;
+    font-size: 1.5rem;
+    padding: 15px 45px 13px 45px;
+  }
+  /* line 780, ../sass/style.scss */
+  .block-1 .sale form .button,
+  .block-6 .sale form .button,
+  .block-12 .sale form .button {
+    width: 340px;
+    padding: 19px 45px 17px 45px;
+  }
+
+  /* line 787, ../sass/style.scss */
+  .discount {
+    top: 100px;
+    right: 50px;
+  }
+
+  /* line 792, ../sass/style.scss */
+  .block-5 img {
+    margin-bottom: -50px;
+    margin-left: -40px;
+  }
+  /* line 796, ../sass/style.scss */
+  .block-5 .desc {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    padding-top: 20px;
+  }
+
+  /* line 803, ../sass/style.scss */
+  .block-9 .bold {
+    padding-left: 11%;
+    padding-top: 10px;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+  }
+  /* line 810, ../sass/style.scss */
+  .block-9 .left img {
+    padding-bottom: 20px;
+  }
+  /* line 813, ../sass/style.scss */
+  .block-9 .left .desc {
+    font-size: 1.5rem;
+    line-height: 1.9rem;
+  }
+  /* line 819, ../sass/style.scss */
+  .block-9 .product img {
+    width: 90%;
+    padding-left: 0;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1350px) {
+  /* line 832, ../sass/style.scss */
+  .block-1 .product,
+  .block-6 .product,
+  .block-12 .product {
+    right: -240px;
+  }
+  /* line 834, ../sass/style.scss */
+  .block-1 .product img,
+  .block-6 .product img,
+  .block-12 .product img {
+    width: 60%;
+    padding-top: 100px;
+  }
+  /* line 839, ../sass/style.scss */
+  .block-1 .sale,
+  .block-6 .sale,
+  .block-12 .sale {
+    right: -60px;
+  }
+  /* line 841, ../sass/style.scss */
+  .block-1 .sale .title,
+  .block-6 .sale .title,
+  .block-12 .sale .title {
+    font-size: 3rem;
+  }
+  /* line 844, ../sass/style.scss */
+  .block-1 .sale .price,
+  .block-6 .sale .price,
+  .block-12 .sale .price {
+    font-size: 2.2rem;
+  }
+  /* line 846, ../sass/style.scss */
+  .block-1 .sale .price.old,
+  .block-6 .sale .price.old,
+  .block-12 .sale .price.old {
+    width: 60%;
+  }
+  /* line 849, ../sass/style.scss */
+  .block-1 .sale .price.new,
+  .block-6 .sale .price.new,
+  .block-12 .sale .price.new {
+    width: 40%;
+  }
+  /* line 854, ../sass/style.scss */
+  .block-1 .sale form input,
+  .block-1 .sale form select,
+  .block-6 .sale form input,
+  .block-6 .sale form select,
+  .block-12 .sale form input,
+  .block-12 .sale form select {
+    width: 420px;
+  }
+  /* line 858, ../sass/style.scss */
+  .block-1 .sale form .button,
+  .block-6 .sale form .button,
+  .block-12 .sale form .button {
+    width: 420px;
+  }
+
+  /* line 864, ../sass/style.scss */
+  .discount {
+    top: 120px;
+    right: 100px;
+  }
+}
+@media (min-width: 1350px) and (max-width: 1680px) {
+  /* line 873, ../sass/style.scss */
+  .block-1 .product,
+  .block-6 .product,
+  .block-12 .product {
+    right: -240px;
+  }
+  /* line 875, ../sass/style.scss */
+  .block-1 .product img,
+  .block-6 .product img,
+  .block-12 .product img {
+    width: 72%;
+  }
+  /* line 879, ../sass/style.scss */
+  .block-1 .sale,
+  .block-6 .sale,
+  .block-12 .sale {
+    right: -140px;
+  }
+  /* line 881, ../sass/style.scss */
+  .block-1 .sale .title,
+  .block-6 .sale .title,
+  .block-12 .sale .title {
+    font-size: 3rem;
+  }
+}
