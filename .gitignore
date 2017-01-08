@@ -2,3 +2,4 @@
 *.psd
 /.sass-cache/*
 /PSD/*
+/node_modules/*

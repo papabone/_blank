@@ -1,0 +1,34 @@
+{
+  "name": "land",
+  "version": "1.0.0",
+  "description": "plain landing page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/papabone/_blank.git"
+  },
+  "keywords": [
+    "landingpage"
+  ],
+  "author": "konstantin_filon zen-b.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/papabone/_blank/issues"
+  },
+  "homepage": "https://github.com/papabone/_blank#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.6",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-cache": "^0.4.5",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.0.0",
+    "imagemin-pngquant": "^5.0.0"
+  }
+}
