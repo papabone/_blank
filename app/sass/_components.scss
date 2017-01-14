@@ -26,6 +26,7 @@ header{
   outline: none;   
   display: block;
   text-align: center;
+  margin: auto;
   @include transit($transit);
   &:hover{
     background-color: $btn-c-activ;

@@ -1,0 +1,106 @@
+.pop-menu{/*всплывающее меню*/
+	position: fixed;	
+	top:0;	
+	left: 0;
+	width: 100%;
+	height: 100%;
+	margin: 0;	
+	padding: 0;
+	background-color: $bg-c;	
+	opacity:0.97;
+	z-index: 999;
+	display: block;
+	padding-top: 15%;
+	display:none;
+	text-align: center;
+	li{
+		padding-top: 12%;
+		a{
+			display: block;
+			color: #fff;
+			font-size: 2.0rem;
+			font-family: $font-f;
+			color: $font-green;
+			text-transform: uppercase;
+			/*&:first-letter{
+    	  text-transform: uppercase;
+    	}*/
+    	&:active,
+  		&:visited,
+  		&:link{
+  		  text-decoration: none;
+  		  outline:none;
+  		}
+  		&:hover{
+  			color: #fff;
+  		}
+		}
+	}
+}
+.nav-toggle{/*кнопка сэндвич*/
+	padding-top: 3px;
+	border:none;
+	background-color:transparent;
+	height: auto;
+	.sandwich {
+		width: 40px;
+		height: 40px;
+		.sw-top,
+		.sw-mid,
+		.sw-low {
+			position: relative;
+			height: 3px;
+			background: #fff;
+			border: none;
+			border-radius: 2px 2px 2px 2px;
+		}
+		.sw-top {
+		  top: 0;
+		  transition: transform 0.5s, top 0.2s;
+		/* transition-delay: 0.2s, 0s; */
+		}
+		.sw-mid {
+		  top: 10px;
+		  transition: transform 0.5s, top 0.2s;
+		  transition-delay: 0.2s, 0s;
+		}
+		.sw-low {
+		  top: 20px;
+		  transition: all 0.5s;
+		  transition-delay: 0.1s;
+		}
+		&.active .sw-top {
+		  top: 10px;
+		  transform: rotate(140deg);
+		  background: $btn-c;
+		}
+		&.active .sw-mid {
+		  top: 7px;
+		  transform: rotate(-140deg);
+		  background:$btn-c;
+		}
+		&.active .sw-low {
+		  opacity: 0;
+		  top: 0;
+		  transform: rotate(180deg);
+		  background:$btn-c;
+		}
+	}
+}	
+			
+				
+			/*<button class="nav-toggle visible-xs">
+          <div class="sandwich">
+            <div class="sw-top"></div>
+            <div class="sw-mid"></div>
+            <div class="sw-low"></div>
+          </div>
+        </button>
+
+				<ul class="pop-menu">
+            <li><a href="#how">как это работает</a></li>
+            <li><a href="#expert">мнение эксперта</a></li>
+            <li><a href="#advantage">преимущества</a></li>
+            <li><a href="#result">результаты исследований</a></li>
+            <li><a href="#review">отзывы</a></li>
+        </ul>*/
