@@ -1,21 +1,23 @@
 @import "_normolise.scss";
 @import "_bootstrap-modal";
-@import "_vars.scss";
 @import "_mymixins.scss";
 @import "_color.scss";
-//@import "_fonts.scss";
+@import "_fonts.scss";
+@import "_vars.scss";
 //@import "_social.scss";
 //@import "_myhover.scss";
-@import "_icons.scss";
+@import "_icons";
 @import "_modal";
-@import "_countdown.scss";
+//@import "_swiper-option";
+//@import "_countdown.scss";
 @import "_sandwich.scss";
-@import "_components.scss";
+//@import "_youtube";
+@import "_components";
 //@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,300&subset=latin,cyrillic');
 @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&amp;subset=cyrillic,cyrillic-ext,latin-ext');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:500&amp;subset=cyrillic');
 html{
-  font-size: 14pt;
+  font-size: 18px;
   font-family: $font-f;
   color: $font-c;
   min-width: 320px;
@@ -27,7 +29,8 @@ body{
 section,
 footer,
 header{
-  overflow-x: hidden;
+  position: relative;
+  overflow: hidden;
 }
 p{
   padding-bottom: 20px;
@@ -42,19 +45,199 @@ section{
 }
 footer{
   text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  a{
+    color: #fed6bc;
+  }
 }
 button{
   border: none;
   outline: none;
 }
-/*a{
-  &:hover,
-  &:active,
-  &:visited,
-  &:link{
-    outline:none;
+.button{
+  border: 1px solid $btn-c-activ;
+}
+header{ 
+  .logo{
+    padding-top: 8px;
+    padding-right: 45px;
   }
-}*/
+  .menu{
+    ul{
+      li{
+        padding-top: 15px;
+        font-size: 0.9rem;
+        position: relative;
+        &:hover:before{
+          content: '';
+          display: inline-block;
+          position: absolute;
+          top: 3px;
+          left: -15px;
+          width: 40px;
+          height: 40px;
+          background-image: url('../img/i/hover-menu.png');
+          background-size: 100%;
+          background-position: 0 0;
+          background-repeat: no-repeat;
+        }
+        &:hover a,
+        &:active a{
+          color:#fed6bc;
+        }
+        a{
+          color: inherit;
+          &:hover,
+          &:active,
+          &:visited,
+          &:link{
+            outline:none;
+            text-decoration: none;
+            position: relative;   
+          }
+        }
+      }
+      li:nth-child(1n){
+        width: 18%; 
+      }
+      li:nth-child(2n){
+        width: 22%;
+      }
+      li:nth-child(3n){
+        width: 22%;
+      }
+      li:nth-child(4n){
+        width: 15%;
+      }
+      li:nth-child(5n){
+        width: 23%;
+      }
+    }
+  }
+}
+.block-main{
+  background-image: url('../img/bg-main.jpg');
+  text-align: center;
+  .title{
+    padding-top: 50px;
+    padding-bottom: 10px;
+  }
+  .desc{
+    font-style: italic;
+  }
+  .price{
+    padding-bottom: 30px;
+    &.old{
+      padding-right: 10px;
+      color: #462d29;
+    }
+    &.new{
+      color:#ffe4d2;
+    }
+  }
+  .product{
+    position: relative;
+    padding-left: 5%;
+    padding-right: 5%;
+    img{
+      width: 100%;
+    }
+    .discount{
+      top:-40px;
+      right: 10px;
+    }
+  }
+  form{
+    padding-top: 40px;
+    padding-left: 45px;
+    padding-right: 45px;
+    font-size: 0.85rem;
+    input,
+    select,
+    .button{
+      width: 20%;
+      border-radius: 0;
+      margin-left: 0.5%;
+      margin-right: 0.5%;
+      border: 1px solid #54658d;
+    }
+    .button{
+      margin-top: 4px;
+      width: 33%;
+      background-color: $btn-c-activ;
+      border-color: $btn-c-activ;
+      &:hover{
+        background-color: #702812;
+        border-color: #702812;
+      }
+    }
+  }
+}
+
+.modal-body{
+  text-align: center;
+  .title{
+    padding-top: 40px;
+    padding-bottom: 0;
+  }
+  .desc{
+    font-style: italic;
+    padding-bottom: 20px;
+  }
+  .price{
+    padding-bottom: 20px;
+    &.old{
+      padding-right: 10px;
+      color: #462d29;
+    }
+    &.new{
+      color:#ffe4d2;
+    }
+  }
+  .product{
+    margin: auto;
+    width: 50%;
+    position: relative;
+    padding-left: 5%;
+    padding-right: 5%;
+    img{
+      width: 100%;
+    }
+    .discount{
+      &.circle{
+        top: 15px;
+        right: 15px;
+        padding: 23px 12px;
+      }
+    }
+  }
+  form{
+    padding-top: 30px;
+    padding-left: 15%;
+    padding-right: 15%;
+    font-size: 0.85rem;
+    input,
+    select,
+    .button{
+      width: 20%;
+      border-radius: 0;
+      margin-left: 0.5%;
+      margin-right: 0.5%;
+      border: 1px solid #54658d;
+    }
+    .button{
+      margin-top: 4px;
+      width: 33%;
+      background-color: $btn-c-activ;
+      border-color: $btn-c-activ;
+      &:hover{
+        background-color: #702812;
+        border-color: #702812;
+      }
+    }
+  }
+}
 
 @media (max-width: 767px){
   html{
@@ -70,23 +253,181 @@ button{
     padding: 40px 0;
   }
   .title{
-    font-size: 2rem;
-    line-height: 2.4rem;
+    font-size: 2.0rem;
   }
-  .desc{
-    font-size: 1.2rem;
-    line-height: 1.6rem;
+  header{ 
+    .logo{
+      padding-top: 4px;
+      padding-right: 0;
+      padding-left: 0;
+      text-align: center;
+      img{
+        margin:auto;
+        width: 140px;
+        height: 17px;
+      }
+    }
+    .menu{
+      ul{
+        li{
+          padding-top: 7px;
+        }
+      }
+    }
   }
-  .bold{
-    font-size: 1.6rem;
-    line-height: 2.0rem;
+  .block-main{
+    .title{
+      padding-top: 10px;
+      padding-bottom: 0;
+    }
+    .desc{
+      padding-bottom: 10px;
+    }
+    .price{
+      padding-bottom: 15px;
+    }
+    .product{
+      .discount{
+        top:-25px;
+        right: -5px;
+      }
+    }
+    form{
+      padding-top: 20px;
+      padding-right: 10px;
+      padding-left: 10px;
+      input,
+      select,
+      .button{
+        width: 30%;
+      }
+      .button{
+        display: block;
+        margin: auto;
+        margin-top: 5px;
+        width: 50%;
+      }
+    }
+  }
+
+  .modal-body{
+    .title{
+      padding-top: 0px;
+    }
+    .desc{
+      padding-bottom: 10px;
+    }
+    .price{
+      padding-bottom: 20px;
+    }
+    .product{
+      margin: auto;
+      width: 60%;
+      .discount{
+        &.circle{
+          top: 25px;
+          right: 5px;
+          padding: 14px 7px;
+        }
+      }
+    }
+    form{
+      padding-top: 10px;
+      padding-left: 5%;
+      padding-right: 5%;
+      input,
+      select,
+      .button{
+        width: 30%;
+      }
+      .button{
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+        width: 50%;
+      }
+    }
   }
 }
 @media (max-width: 620px) {}
-@media (max-width: 420px) {}
+@media (max-width: 420px) {
+  .block-main{
+    background-image: url('../img/bg-1-xs.jpg');
+    .title{
+      padding-top: 10px;
+      font-size: 1.7rem;
+    }
+    .desc{
+      font-size: .9rem;
+    }
+    .product{
+      .discount{
+        top:-15px;
+        right: -5px;
+        &.circle{
+          padding: 10px 3px;
+        }
+      }
+    }
+    form{
+      padding-top: 20px;
+      padding-right: 10px;
+      padding-left: 10px;
+      input,
+      select,
+      .button{
+        display: block;
+        margin: auto;
+        margin-top: 5px;
+        width: 100%;
+      }
+    }
+  }
+
+  .modal-body{
+    .title{
+      font-size: 1.6rem;
+    }
+    .desc{
+      font-size: .9rem;
+    }
+    .product{
+      width: 80%;
+      .discount{
+        &.circle{
+          top: 25px;
+          right: -10px;
+          padding: 11px 5px;
+        }
+      }
+    }
+    .price{
+      &.new{
+        padding-left: 10px;
+      }
+      &.old{
+        padding-right: 15px;
+      }
+    }
+    form{
+      padding-top: 10px;
+      padding-left: 0%;
+      padding-right: 0%;
+      input,
+      select,
+      .button{
+        display: block;
+        margin: auto;
+        margin-top: 5px;
+        width: 70%;
+        max-width: 100%;
+      }
+    }
+  }
+}
 @media (min-width: 768px) and (max-width: 991px) {
   html{
-    font-size: 13px;
+    font-size: 12px;
   }
   p{
     padding-bottom: 17px;
@@ -97,20 +438,81 @@ button{
   section{
     padding: 55px 0;
   }
-  .title{
-    font-size: 2.1rem;
-    line-height: 2.7rem;
+  header{ 
+    .logo{
+      padding-top: 2px;
+      padding-right: 10px;
+    }
+    .menu{
+      ul{
+        li{
+          padding-top: 7px;
+          &:hover:before{
+            top: 0px;
+            left: -10px;
+            width: 30px;
+            height: 30px;
+          }
+        }
+      }
+    }
   }
-  .desc{
-    font-size: 1.5rem;
-    line-height: 2.1rem;
+  .block-main{
+    .title{
+      padding-top: 10px;
+      padding-bottom: 0;
+    }
+    .desc{
+      padding-bottom: 10px;
+    }
+    .price{
+      padding-bottom: 15px;
+    }
+    .product{
+      .discount{
+        top:-30px;
+        right: 5px;
+      }
+    }
+    form{
+      padding-top: 20px;
+      padding-right: 10px;
+      padding-left: 10px;
+    }
   }
-  .bold{
-    font-size: 1.7rem;
-    line-height: 2.3rem;
+
+  .modal-body{
+    .title{
+      padding-top: 10px;
+    }
+    .desc{
+      padding-bottom: 10px;
+    }
+    .price{
+      padding-bottom: 20px;
+    }
+    .product{
+      margin: auto;
+      width: 60%;
+      .discount{
+        &.circle{
+          top: 25px;
+          right: 5px;
+          padding: 14px 7px;
+        }
+      }
+    }
+    form{
+      padding-top: 20px;
+      padding-left: 3%;
+      padding-right: 3%;
+    }
   }
 }
 @media (min-width: 992px)and(max-width: 1199px){
+  html{
+    font-size: 16px;
+  }
   p{
     padding-bottom: 18px;
   }
@@ -120,17 +522,61 @@ button{
   section{
     padding: 60px 0;
   }
-  .title{
-    font-size: 2.3rem;
-    line-height: 2.7rem;
+  header{ 
+    .logo{
+      padding-top: 4px;
+      padding-right: 30px;
+    }
+    .menu{
+      ul{
+        li{
+          padding-top: 10px;
+          &:hover:before{
+            top: 0px;
+            left: -12px;
+            width: 36px;
+            height: 36px;
+          }
+        }
+      }
+    }
   }
-  .desc{
-    font-size: 1.7rem;
-    line-height: 2.1rem;
+  .block-main{
+    .title{
+      padding-top: 40px;
+    }
+    form{
+      padding-right: 20px;
+      padding-left: 20px;
+    }
   }
-  .bold{
-    font-size: 1.9rem;
-    line-height: 2.3rem;
+
+  .modal-body{
+    .title{
+      padding-top: 20px;
+    }
+    .desc{
+      padding-bottom: 10px;
+    }
+    .price{
+      padding-bottom: 20px;
+    }
+    .product{
+      margin: auto;
+      width: 60%;
+      .discount{
+        &.circle{
+          top: 25px;
+          right: 5px;
+          padding: 14px 7px;
+        }
+      }
+    }
+    form{
+      padding-top: 20px;
+      padding-left: 3%;
+      padding-right: 3%;
+    }
   }
 }
 @media (min-width: 1200px)and(max-width: 1349px){}

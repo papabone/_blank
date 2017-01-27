@@ -7,21 +7,21 @@
 	margin: 0;	
 	padding: 0;
 	background-color: $bg-c;	
-	opacity:0.97;
+	opacity:0.95;
 	z-index: 999;
 	display: block;
-	padding-top: 15%;
+	padding-top: 80px;
 	display:none;
 	text-align: center;
 	li{
-		padding-top: 12%;
+		padding-top: 40px;
 		a{
 			display: block;
-			color: #fff;
 			font-size: 2.0rem;
-			font-family: $font-f;
-			color: $font-green;
+			font-family: $font-f-alt;
+			color: #ffb68b;
 			text-transform: uppercase;
+			opacity: 0.7;
 			/*&:first-letter{
     	  text-transform: uppercase;
     	}*/
@@ -32,25 +32,25 @@
   		  outline:none;
   		}
   		&:hover{
-  			color: #fff;
+  			opacity: 1;
   		}
 		}
 	}
 }
 .nav-toggle{/*кнопка сэндвич*/
-	padding-top: 3px;
+	padding-top: 2px;
 	border:none;
 	background-color:transparent;
 	height: auto;
 	.sandwich {
-		width: 40px;
-		height: 40px;
+		width: 28px;
+		height: 28px;
 		.sw-top,
 		.sw-mid,
 		.sw-low {
 			position: relative;
-			height: 3px;
-			background: #fff;
+			height: 2px;
+			background: #ffb68b;
 			border: none;
 			border-radius: 2px 2px 2px 2px;
 		}
@@ -60,30 +60,30 @@
 		/* transition-delay: 0.2s, 0s; */
 		}
 		.sw-mid {
-		  top: 10px;
+		  top: 7px;
 		  transition: transform 0.5s, top 0.2s;
 		  transition-delay: 0.2s, 0s;
 		}
 		.sw-low {
-		  top: 20px;
+		  top: 14px;
 		  transition: all 0.5s;
 		  transition-delay: 0.1s;
 		}
 		&.active .sw-top {
-		  top: 10px;
+		  top: 9px;
 		  transform: rotate(140deg);
-		  background: $btn-c;
+		  background: #ffb68b;
 		}
 		&.active .sw-mid {
 		  top: 7px;
 		  transform: rotate(-140deg);
-		  background:$btn-c;
+		  background:#ffb68b;
 		}
 		&.active .sw-low {
 		  opacity: 0;
 		  top: 0;
 		  transform: rotate(180deg);
-		  background:$btn-c;
+		  background:#ffb68b;
 		}
 	}
 }	

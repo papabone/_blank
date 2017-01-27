@@ -1,5 +1,11 @@
+//on-top
+var onTopElement = document.querySelector('.on-top-element');
+onTopElement.onclick = function(){
+  this.classList.toggle('on-top');
+}
+
 //countdown
-jQuery(document).ready(function() {  
+/*jQuery(document).ready(function() {  
   $('#countdown').countdown({
     timestamp :  new Date(2021, 0, 1)
   });
@@ -9,7 +15,7 @@ jQuery(document).ready(function() {
   $('#countdown-modal').countdown({
     timestamp :  new Date(2021, 0, 1)
   });
-});
+});*/
 
 //Плавная прокрутка к якорю
 $("body").on('click', 'a[href*=#]:not([href=#])', function(e){
@@ -33,7 +39,7 @@ jQuery(document).ready(function() {
 });
 
 //Проверка кода на упаковке
-jQuery(document).ready(function() {
+/*jQuery(document).ready(function() {
   $(".chek-code button").click(function () {
     var $code = $(".chek-code input "),
     $message = $(".chek-code-message");
@@ -51,12 +57,25 @@ jQuery(document).ready(function() {
     }
   })
 
-});
+});*/
 
 
-/*
+
   //initialize SWIPPER touch-slider
-  var swiper01 = new Swiper('.swiper-container', {
+var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        spaceBetween: 30
+    });
+var swiper = new Swiper('.swiper-container-phone', {
+        nextButton: '.swiper-button-next-phone',
+        prevButton: '.swiper-button-prev-phone',
+        spaceBetween: 30
+    });
+
+ /* var swiper01 = new Swiper('.swiper-container', {
     // Optional parameters 
     grabCursor: true,
     threshold: 10,

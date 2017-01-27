@@ -1,0 +1,55 @@
+.swiper-container,
+.swiper-container-phone{
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-button-prev-phone,
+.swiper-button-next-phone {
+  width: 65px;
+  height: 50px;
+  margin-top: -25px;
+  z-index: 10;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  float: none;
+  position: absolute;
+}
+.swiper-button-prev.swiper-button-disabled,
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev-phone.swiper-button-disabled,
+.swiper-button-next-phone.swiper-button-disabled {
+  opacity: 0.35;
+  pointer-events: none;
+}
+.swiper-button-prev,
+.swiper-button-prev-phone {
+  background-image: url('../img/i/left-errow.png');
+  left: 10px;
+  right: auto;
+}
+.swiper-button-next,
+.swiper-button-next-phone {
+  background-image: url('../img/i/right-errow.png');
+  right: 10px;
+  left: auto;
+}

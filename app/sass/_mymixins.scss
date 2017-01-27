@@ -1,3 +1,11 @@
+@mixin plecehold($placehold-c) {    
+  input{
+    &::-webkit-input-placeholder {color: $placehold-c;}
+    &::-moz-placeholder          {color: $placehold-c;}/* Firefox 19+ */
+    &:-moz-placeholder           {color: $placehold-c;}/* Firefox 18- */
+    &:-ms-input-placeholder      {color: $placehold-c;}
+  }
+}
 @mixin flexbox() {		
 	display: -webkit-box;
   display: -ms-flexbox;

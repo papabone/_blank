@@ -1,15 +1,17 @@
 .icon-box{
   position: relative;
-  padding-left: 50px;
   &.vert{
-    padding-top: 145px;
+    padding-top: 115px;
+    text-align: center;
     &::before{
-      background-size: 210px 130px;
-      background-repeat: no-repeat;
-      background-position: top center;
-      top: 0;
+      position: absolute;
       width: 100%;
-      height: 130px;
+      height: 100px;
+      top: 0;
+      left: 0;
+      background-size: 100px 100%;
+      background-repeat: no-repeat;
+      background-position: top center;   
     }
   }
   &.horizon{
@@ -22,22 +24,157 @@
   }
   &::before{
     content: "";  
-    background-image: url('../img/i/top1.png');
+    background-image: url('../img/i/bl-1-1.png');
     background-size: 100%;
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    left: 0px;  
   }
   &:nth-child(2n)::before{
-    background-image: url('../img/i/top2.png');
+    background-image: url('../img/i/bl-1-2.png');
   }
   &:nth-child(3n)::before{
-    background-image: url('../img/i/top3.png');
+    background-image: url('../img/i/bl-1-3.png');
+  }
+}
+.block-3{
+  .icon-box{
+    &.vert{
+      padding-top: 225px;
+      &::before{
+        height: 220px;
+        background-size: 220px 100%;
+      }
+    }
+  }
+  .one .icon-box::before{
+    background-image: url('../img/i/bl-3-1.png');
+  }
+  .two .icon-box::before{
+    background-image: url('../img/i/bl-3-2.png');
+  }
+  .three .icon-box::before{
+    background-image: url('../img/i/bl-3-3.png');
+  }
+  .four .icon-box::before{
+    background-image: url('../img/i/bl-3-4.png');
+  }
+}
+.block-9{  
+  .icon-box{
+    padding: 0;
+    &.vert{
+      padding-top: 145px;
+      &::before{
+        background-size: 210px 130px;
+        background-repeat: no-repeat;
+        background-position: top center;
+        top: 0;
+        width: 100%;
+        height: 130px;
+      }
+    }
+    &.horizon{
+      padding-left: 110px;
+      &::before{
+        left: 90px;
+        width: 100px;
+        height: 92px;
+      }
+    }
+    &::before{
+      background-image: url('../img/i/bl9-order.png');
+    }
+    &.delivery::before{
+      background-image: url('../img/i/bl9-delivery.png');
+    }
+    &.pay::before{
+      background-image: url('../img/i/bl9-pay.png');
+    }
+    &.arrow::before{
+      background-image: url('../img/i/bl9-arrow.png');
+      background-size: 45px 45px;
+      top: 40px;
+    }
+    &.arrow.left::before{
+     background-position: top left;
+    }
+    &.arrow.right::before{
+     background-position: top right;
+    }
   }
 }
 
 
-@media (max-width: 767px){}
-@media (min-width: 768px) and (max-width: 991px){}
+@media (max-width: 767px){
+  .block-3{ 
+    .icon-box{
+      &.vert{
+        padding-top: 152px;
+        &::before{
+          height: 150px;
+          background-size: 150px 100%;
+        }
+      }
+    }
+  }
+  .block-9{  
+    .icon-box{
+      padding: 0;
+      &.vert{
+        padding-top: 88px;
+        &::before{
+          background-size: 126px 78px;
+          width: 100%;
+          height: 78px;
+        }
+      }
+      &.horizon{
+        padding-top: 0;
+        &::before{
+          top: 5px;
+          left: 15px;
+          width: 60px;
+          height: 55px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 991px){
+  .block-3{ 
+    .icon-box{
+      &.vert{
+        padding-top: 152px;
+        &::before{
+          height: 150px;
+          background-size: 150px 100%;
+        }
+      }
+    }
+  }
+  .block-9{  
+    .icon-box{
+      padding: 0;
+      &.vert{
+        padding-top: 88px;
+        &::before{
+          background-size: 126px 78px;
+          width: 100%;
+          height: 78px;
+        }
+      }
+      &.horizon{
+        padding-left: 30px;
+        &::before{
+          top: 11px;
+          left: 10px;
+          width: 60px;
+          height: 55px;
+        }
+      }
+      &.arrow::before{
+        background-size: 27px 27px;
+        top: 25px;
+      }
+    }
+  }
+}
 @media (min-width: 992px) and (max-width: 1199px){}

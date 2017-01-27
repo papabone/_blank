@@ -15,6 +15,7 @@ var sandwich = {
   init: function(){
     var popMenu = document.createElement('ul');
     popMenu.className = 'pop-menu';
+    popMenu.style.display = 'none';
     popMenu.innerHTML = document.querySelector('.menu>ul').innerHTML;
     document.body.appendChild(popMenu);
     document.querySelector('.nav-toggle').addEventListener( 'click', this.toggle);

@@ -7,11 +7,15 @@ var gulp = require('gulp');
     imagemin    = require('gulp-imagemin'),
     pngquant    = require('imagemin-pngquant'),
     cache       = require('gulp-cache'),
-    autoprefixer = require('gulp-autoprefixer'); 
+    autoprefixer = require('gulp-autoprefixer'), 
+    plumber = require('gulp-plumber'),
+    sassGlob = require('gulp-sass-glob');
 
 
 gulp.task('sass', function(){
     return gulp.src('app/sass/**/*.scss')
+        .pipe(plumber())
+        .pipe(sassGlob())
         .pipe(sass())
         .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
         .pipe(gulp.dest('app/css'))
@@ -56,6 +60,9 @@ gulp.task('build', ['clean', 'img', 'css-min'], function() {
 
     var buildFonts = gulp.src('app/fonts/**/*')
     .pipe(gulp.dest('dist/fonts'))
+
+    var buildFonts = gulp.src('app/video/**/*')
+    .pipe(gulp.dest('dist/video'))
 
     var buildJs = gulp.src('app/js/**/*')
     .pipe(gulp.dest('dist/js'))

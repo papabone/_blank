@@ -1,29 +1,32 @@
-$bg-c:#232323;
+$bg-c:#462d29;
 $bg-c-dark:#0b090e;
 
-$btn-c:#61a626;
-$btn-c-activ:#406e19;
+$btn-c: transparent;
+$btn-c-activ:#d15229;
 
 $font-c:#ffffff;
 $font-dark: #232323;
 $font-activ:#fcfcfc;
 
 $font-gold:#fbc731;
-$font-blue: #55aee6;
+$font-blue: #495a82;
 $font-light-blue: #8be2fc;
 $font-purp: #dd055c;
 
+$placehold-c: #223153;
 
+
+.dark{
+	color: $font-dark;
+}
 .purp{
 	color:$font-purp;
 }
-
 .gold{
 	color:$font-gold;
 }
-
 .blue{
-	color:$font-light-blue;
+	color:$font-blue;
 }
 
 
