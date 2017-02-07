@@ -30,7 +30,9 @@ footer{
   text-align: center;
   margin: auto;
   @include transit($transit);
-  &:hover{
+  &:hover,
+  &:active,
+  &:focus{
     background-color: $btn-c-activ;
     color: $font-activ;
     text-decoration: none; 
@@ -116,6 +118,10 @@ form{
     max-width: 100%;
     color: $placehold-c;
     padding: 10px 17px;
+    &:active, 
+    &:focus{
+      outline: 1px solid red;
+    }
   }
   .button{
     width: 60%;

@@ -83,7 +83,8 @@ header{
           background-repeat: no-repeat;
         }
         &:hover a,
-        &:active a{
+        &:active a,
+        a:focus {
           color:#fed6bc;
         }
         a{
@@ -167,7 +168,8 @@ header{
       width: 33%;
       background-color: $btn-c-activ;
       border-color: $btn-c-activ;
-      &:hover{
+      &:hover,
+      &:focus{
         background-color: #702812;
         border-color: #702812;
       }
