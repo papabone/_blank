@@ -583,15 +583,20 @@ template {
       background-repeat: no-repeat;
       background-position: top center; }
   .icon-box.horizon {
-    padding-left: 110px; }
+    padding-left: 40px;
+    text-align: left; }
     .icon-box.horizon::before {
-      left: 90px;
-      width: 100px;
-      height: 92px; }
+      position: absolute;
+      width: 64px;
+      height: 100%;
+      top: 0;
+      left: -35px;
+      background-size: 100% 54px;
+      background-repeat: no-repeat;
+      background-position: top center; }
   .icon-box::before {
     content: "";
-    background-image: url("../img/i/bl-1-1.png");
-    background-size: 100%; }
+    background-image: url("../img/i/bl-1-1.png"); }
   .icon-box:nth-child(2n)::before {
     background-image: url("../img/i/bl-1-2.png"); }
   .icon-box:nth-child(3n)::before {
@@ -868,7 +873,7 @@ footer {
   margin: auto;
   -webkit-transition: all 500ms ease 0s;
   transition: all 500ms ease 0s; }
-  .button:hover {
+  .button:hover, .button:active, .button:focus {
     background-color: #d15229;
     color: #fcfcfc;
     text-decoration: none; }
@@ -944,6 +949,10 @@ form {
     max-width: 100%;
     color: #223153;
     padding: 10px 17px; }
+    form input:active, form input:focus,
+    form select:active,
+    form select:focus {
+      outline: 1px solid red; }
   form .button {
     width: 60%;
     margin: 6px 0;
@@ -1083,6 +1092,12 @@ button {
   border: none;
   outline: none; }
 
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: none; }
+
 .button {
   border: 1px solid #d15229; }
 
@@ -1107,7 +1122,8 @@ header .menu ul li {
     background-position: 0 0;
     background-repeat: no-repeat; }
   header .menu ul li:hover a,
-  header .menu ul li:active a {
+  header .menu ul li:active a,
+  header .menu ul li a:focus {
     color: #fed6bc; }
   header .menu ul li a {
     color: inherit; }
@@ -1174,7 +1190,7 @@ header .menu ul li:nth-child(5n) {
       width: 33%;
       background-color: #d15229;
       border-color: #d15229; }
-      .block-main form .button:hover {
+      .block-main form .button:hover, .block-main form .button:focus {
         background-color: #702812;
         border-color: #702812; }
 

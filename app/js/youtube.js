@@ -28,7 +28,7 @@ var youtubeWrapper = function (options) {
 
     var addFrame = function () {
         var iframe = document.createElement("iframe");
-        var videoUrl = 'https://www.youtube.com/embed/' + this.id + '?autoplay=1&autohide=1';
+        var videoUrl = 'https://www.youtube.com/embed/' + this.id + '?autoplay=1&autohide=1&version=3';
         for (var param in options.params) {
             videoUrl += '&' + param + '=' + options.params[param];
         }
@@ -40,6 +40,15 @@ var youtubeWrapper = function (options) {
         this.style.backgroundImage = '';
         this.appendChild(iframe);
         this.removeEventListener('click', addFrame);
+        //блокиратор перехода на ютуб над логотипом
+        var shield = document.createElement('span');
+        shield.style.width = '108px';
+        shield.style.height = '37px';
+        shield.style.zIndex = '102';
+        shield.style.position = 'absolute';
+        shield.style.bottom = '0px';
+        shield.style.right = '0px';
+        iframe.parentNode.appendChild(shield);   
     };
 
 

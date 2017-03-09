@@ -15,17 +15,22 @@
     }
   }
   &.horizon{
-    padding-left: 110px;
+    padding-left: 40px;
+    text-align: left;
     &::before{
-      left: 90px;
-      width: 100px;
-      height: 92px;
+      position: absolute;
+      width: 64px;
+      height: 100%;
+      top: 0;
+      left: -35px;
+      background-size: 100% 54px;
+      background-repeat: no-repeat;
+      background-position: top center;
     }
   }
   &::before{
     content: "";  
     background-image: url('../img/i/bl-1-1.png');
-    background-size: 100%;
   }
   &:nth-child(2n)::before{
     background-image: url('../img/i/bl-1-2.png');

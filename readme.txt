@@ -1,6 +1,11 @@
 —тартовый конфиг дл€ верстки ландоса
 html/scss/js/
 
-+some accessibility (:focus,:active)
-+change on-top (common.js)
-+posterHover (common.js)
++отмена стилей по умолчанию дл€ кнопок
++дл€ отмены перехода при клике по ролику version=3
++блокиратор перехода на ютуб над логотипом
++.icon-box.horizon
++_countdown-option.scss
++_checkbox.scss
++insta(img/_insta.scss/insta.js)
+

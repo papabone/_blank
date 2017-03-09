@@ -8,6 +8,8 @@
 //@import "_myhover.scss";
 @import "_icons";
 @import "_modal";
+@import "_checkbox";
+@import "_insta.scss";
 //@import "_swiper-option";
 //@import "_countdown.scss";
 @import "_sandwich.scss";
@@ -54,6 +56,13 @@ footer{
 button{
   border: none;
   outline: none;
+}
+//отмена стилей по умолчанию
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: none;
 }
 .button{
   border: 1px solid $btn-c-activ;

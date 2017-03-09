@@ -1,0 +1,178 @@
+.insta{
+  background-color: #6b3f6a;
+  text-align: center;
+  .title-parent{
+    padding-bottom: 0;
+  }
+  .desc{
+    padding-top: 30px;
+    font-size: 1.3rem;
+    padding-bottom: 20px;
+  }
+  .row{
+    position: relative;
+  }
+  .phone{
+    position: relative;
+    width: 75%;
+    padding-top: 140px;
+    padding-bottom: 30px;
+    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative; 
+    &:before{
+      content: '';
+      position: absolute;
+      top:2%;
+      left: -7%;
+      height: 112%;
+      width: 135%;
+      background-image: url('../img/i/insta.png');
+      background-repeat: no-repeat;
+      background-position: top left;
+      background-size: 85% 100%;
+    }
+  }
+  .swiper-container-phone{
+    overflow: hidden;
+    .swiper-slide{
+      text-align: center;
+    }
+  }
+  .swiper-button-prev-phone,
+  .swiper-button-next-phone {
+    top: 300px;
+  }
+  img{
+    width: 100%;
+  }
+  .swiper-container-phone{
+      width: 100%;
+      height: 100%;
+  }
+  .swiper-button-prev-phone,
+  .swiper-button-next-phone {
+    width: 22px;
+    height: 40px;
+    margin-top: -25px;
+    opacity: 1;
+    z-index: 10;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    float: none;
+    position: absolute;
+  }
+  .swiper-button-prev-phone.swiper-button-disabled,
+  .swiper-button-next-phone.swiper-button-disabled {
+    opacity: 0.35;
+    pointer-events: none;
+  }
+  .swiper-button-prev-phone {
+    background-image: url('../img/i/insta-left-errow.png');
+    left: 10px;
+    right: auto;
+  }
+  .swiper-button-next-phone {
+    background-image: url('../img/i/insta-right-errow.png');
+    right: 10px;
+    left: auto;
+  }
+}
+@media (max-width: 767px){
+  .insta{
+    .title{
+      padding-bottom: 30px;  
+    }
+    .phone{
+      width: 156px;
+      padding-top: 82px;
+      margin: auto;
+      padding-bottom: 30px;
+      margin-bottom: 60px;
+      &:before{
+        top:2%;
+        left: -7%;
+        height: 110%;
+        width: 135%;
+        background-size: 85% 99%;
+      }
+    }
+    .swiper-button-prev-phone,
+    .swiper-button-next-phone {
+      top: 180px;
+    }
+    .swiper-button-prev,
+    .swiper-button-next,
+    .swiper-button-prev-phone,
+    .swiper-button-next-phone {
+      width: 24px;
+      height: 47px;
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .insta{
+    .title{
+      padding-bottom: 30px;  
+    }
+    .phone{
+      padding-top: 85px;
+      &:before{
+        background-size: 85% 97%;
+      }
+    }
+    .swiper-button-prev-phone,
+    .swiper-button-next-phone {
+      top: 180px;
+    }
+  }
+}
+@media (min-width: 992px)and(max-width: 1199px){
+  .insta{
+    .phone{
+      padding-top: 115px;
+      &:before{
+        left: -7%;
+        background-size: 85% 99%;
+      }
+    }
+  }
+}
+
+/*<section class="wrapper insta covered">
+  <div class="container">
+    <div class="row"> 
+      <div class="col-xs-12 title-parent">
+        <h2 class="title blue">отзывы покупателей</h2>
+        <div class="subtitle">маете, они похудели, изнуряя себя диетой и спортом? Нет<br>, всего лишь принимая Personal Slim!</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-1 col-xs-offset-1 col-sm-1 col-sm-offset-3 prev">
+        <div class="swiper-button-prev-phone"></div>
+      </div>
+      <div class="col-xs-8 col-sm-4">
+        <div class="phone">
+          <div class="swiper-container-phone ">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="img/insta-inner-1.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/insta-inner-2.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/insta-inner-3.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-1 next">
+        <div class="swiper-button-next-phone"></div>
+      </div>
+    </div>
+  </div>
+</section>*/
