@@ -1,0 +1,151 @@
+.countdown{
+	width: 33%;
+	margin: auto;
+	.wrap{
+		display: block;
+		position: relative;
+		float: left;
+		margin-right: 38px;
+		width: 56px;
+		text-align: center;
+		&.day-wrap{
+			display: none;
+		}
+		&.sec-wrap{
+			margin-right: 0;
+		}
+		&:before{
+			content: '';
+			position: absolute;
+			background-image: url('../img/i/timer.png');
+			width: 58px;
+			max-width: 100%;
+  		height: 50px;
+  		background-size: 100%; 
+  		background-repeat: no-repeat; 
+			top: -5px;
+  		left: 0;
+  		z-index: 1;
+		}
+	}
+	.value{
+		position: relative;
+		display: block;
+		padding-top: 5px;
+		padding-bottom: 20px;
+		text-align: center;
+		font-family: $font-f-alt;
+		color: #fff;
+		font-size: 1.5rem;
+		z-index: 2;
+	}
+	.unit{
+		position: relative;
+		display: block;
+		font-size: 1rem;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+	.scale{
+		background-color: #c19f7f; 
+		width: 90px;
+		height: 100%;
+		position: absolute;
+		display: inline-block;
+		left: 0;
+		top:-25%;
+	}
+}
+@media (max-width: 767px){
+	.countdown{	
+		.value{
+			padding-top: 55px;
+			padding-bottom: 55px;
+			font-size: 1.2rem;
+		}
+		.unit{
+			padding-bottom: 10px;
+			font-size: 0.85rem;
+		}
+		.scale{
+			width: 100%;
+		}
+	}
+	#timer-modal.countdown{
+		padding-top: 0;
+		width: 56%;
+		padding-bottom: 40px;
+		.wrap{
+			margin-right: 15px;
+			width: 40px;
+			&:before{
+				width: 37px;
+  			height: 32px;
+			}
+			&.sec-wrap{
+				margin-right: 0;
+			}
+		}
+		.value{
+			padding-top: 2px;
+			padding-bottom: 10px;
+		}
+		.unit{
+			padding-bottom: 7px;
+		}
+	}
+}
+@media (max-width: 620px){
+	.countdown{
+		.value{
+			padding-top: 45px;
+			padding-bottom: 45px;
+		}
+		.unit{
+			padding-bottom: 7px;
+		}
+	}
+}
+@media (max-width: 420px){
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	#timer-modal.countdown{
+		width: 38%;
+		.wrap{
+			margin-right: 20px;
+			width: 50px;
+			&:before{
+				width: 47px;
+  			height: 40px;
+			}
+			&.sec-wrap{
+				margin-right: 0;
+			}
+		}
+		.value{
+			padding-top: 3px;
+			padding-bottom: 15px;
+		}
+		.unit{
+			padding-bottom: 7px;
+		}
+	}
+}
+@media (min-width: 992px)and(max-width: 1199px){
+	#timer-modal.countdown{
+		width: 37%;
+		.wrap{
+			&:before{
+				width: 58px;
+  			height: 50px;
+			}
+		}
+		.value{
+			padding-top: 5px;
+			padding-bottom: 15px;
+		}
+		.unit{
+			padding-bottom: 7px;
+		}
+	}
+}

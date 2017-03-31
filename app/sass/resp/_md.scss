@@ -1,0 +1,122 @@
+//components
+@media (max-width: 1199px){
+  .fix-parant{
+    padding-top: 75px;//fixed header
+    .fix{
+      height: 75px;
+    }
+  }
+  header{
+    padding-top: 12px;
+  }
+  .button{
+    padding: 10px 20px;
+  }
+  form{
+    input,
+    select{
+      padding: 12px 25px;
+    }
+    .button{
+      padding: 14px 0;
+    }
+  }
+}
+
+//main
+@media (max-width: 1199px){
+html{
+  font-size: 15px;
+}
+p{
+  padding-bottom: 18px;
+}
+h1,h2,h3,h4{
+  padding-bottom: 27px;
+}
+section{
+  padding: 50px 0 70px;
+  .subtitle{
+    padding-bottom: 25px;
+  }
+}
+footer{
+  padding-bottom: 35px;
+  padding-top: 35px;
+}
+header{ 
+  .logo{
+    padding-top: 4px;
+    padding-right: 30px;
+  }
+  .icon-box{
+    margin-top: -2px;
+    .desc{
+      font-size: 0.9rem;
+    }
+    &.horizon{
+      padding-left: 37px;
+      &::before{
+        width: 50px;
+        left: -25px;
+        background-size: 100% 50px;
+      }
+    }
+  }
+}
+.block-main{
+  padding-bottom: 75px;
+  .title{
+    font-size: 2.7rem;
+    padding-top: 25px;
+    padding-bottom: 10px;
+  }
+  .desc{
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-bottom: 10px;
+  }
+  .price{
+    padding-bottom: 10px;
+    &.old{
+      width: 58%;
+    }
+    &.new{
+      width: 42%;
+    }
+  }
+  form{
+    padding-top: 8px;
+    input,
+    select,
+    .button{ 
+      margin-bottom: 10px;
+      width: 44%;
+    }
+  }
+  .countdown-wrap{
+    padding-top: 8px;
+  }
+  .product{
+    .product-counter{
+      bottom: -54px;
+    }
+  }
+}
+.block-13{
+  .desc{
+    padding-top: 15px;
+  }
+  .review{
+    .name{
+      padding-top: 7px; 
+      font-size: 1.8rem;
+      padding-bottom: 2px;
+    }
+    .city{
+      padding-bottom: 17px;
+    }
+  }
+}
+//end
+}

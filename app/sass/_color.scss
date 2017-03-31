@@ -1,19 +1,28 @@
-$bg-c:#462d29;
+$bg-c:#26193b;
 $bg-c-dark:#0b090e;
 
 $btn-c: transparent;
-$btn-c-activ:#d15229;
+$btn-c-activ:#cb555a;
 
 $font-c:#ffffff;
 $font-dark: #232323;
 $font-activ:#fcfcfc;
 
 $font-gold:#fbc731;
-$font-blue: #495a82;
-$font-light-blue: #8be2fc;
-$font-purp: #dd055c;
+$font-blue: #5c4b79;
+$font-light-blue: #8aeff1;
+$font-purp: #da4f54;
 
-$placehold-c: #223153;
+$placehold-c: #232323;
+
+$subtitle: #ffd7d9;
+$subtitle-alt: #d1343a;
+.subtitle{
+	color: $subtitle;
+}
+.subtitle.alt{
+	color: $subtitle-alt;
+}
 
 
 .dark{

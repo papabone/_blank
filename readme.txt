@@ -1,11 +1,9 @@
 —тартовый конфиг дл€ верстки ландоса
 html/scss/js/
 
-+отмена стилей по умолчанию дл€ кнопок
-+дл€ отмены перехода при клике по ролику version=3
-+блокиратор перехода на ютуб над логотипом
-+.icon-box.horizon
-+_countdown-option.scss
-+_checkbox.scss
-+insta(img/_insta.scss/insta.js)
-
+фикс на xs header - absolute
+new taimer: -countdown.js +timer.js/.scss
+popup count: +count.js/.scss
+new style modal: _modal.scss
+новый пор€ок адаптации + resp/_*.scss
+change block-main

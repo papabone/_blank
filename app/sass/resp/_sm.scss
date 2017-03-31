@@ -1,0 +1,137 @@
+//components
+@media (max-width: 991px){
+  .fix-parant{
+    padding-top: 60px;//fixed header
+    .fix{
+      height: 60px;
+    }
+  }
+  header{
+    padding-top: 9px;
+  }
+  .button{
+    font-size: 0.9rem;
+    padding: 8px 10px;
+  }
+  .discount{
+    &.circle{
+      padding: 20px 12px;
+    }
+  }
+  form{
+    input,
+    select{
+      padding: 10px 20px;
+    }
+    .button{
+      padding: 12px 0;
+    }
+  }
+}
+
+//main
+@media (max-width: 991px) {
+html{
+  font-size: 14px;
+}
+p{
+  padding-bottom: 15px;
+}
+h1,h2,h3,h4{
+  padding-bottom: 23px;
+}
+section{
+  padding: 45px 0 60px;
+}
+header{ 
+  .logo{
+    padding-right: 20px;
+  }
+  .icon-box{
+    margin-top: 1px;
+    .desc{
+      font-size: 0.8rem;
+    }
+    &.horizon{
+      padding-left: 30px;
+      &::before{
+        width: 40px;
+        left: -20px;
+        background-size: 100% 40px;
+      }
+      &.two{
+        padding-left: 35px;
+        &:before{
+          left: -15px;
+        }
+      }
+      &.three{
+        padding-left: 25px;
+      }
+    }
+  }
+}
+.block-main{
+  padding-bottom: 45px;
+  .title{
+    font-size: 2.2rem;
+    padding-top: 20px;
+    padding-bottom: 8px;
+  }
+  .desc{
+    font-size: 1.05rem;
+    padding-right: 80px;
+    padding-left: 80px;
+    padding-bottom: 8px;
+  }
+  .price{
+    padding-bottom: 7px;
+    font-size: 2rem;
+  }
+  form{
+    padding-top: 5px;
+    input,
+    select,
+    .button{ 
+      margin-bottom: 8px;
+      width: 50%;
+    }
+  }
+  .countdown-wrap{
+    padding-top: 5px;
+  }
+  .product{
+    .discount{
+      width: 64px;
+      height: 80px;
+      right: -40px;
+      padding-top: 20px;
+    }
+    .product-counter{
+      font-size: 0.8rem;
+      bottom: -44px;
+    }
+  }
+}
+.block-13{
+  .desc{
+    padding-top: 12px;
+  }
+  .review{
+    .name{
+      padding-top: 5px; 
+      padding-bottom: 2px;
+    }
+    .city{
+      padding-bottom: 15px;
+    }
+  }
+}
+.block-14{
+  .audiojs{
+    max-width: 100%;
+    height: 75px;
+  }
+}
+//end
+}

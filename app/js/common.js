@@ -33,17 +33,7 @@ function videoPlay(e){
 };
 
 //countdown
-/*jQuery(document).ready(function() {  
-  $('#countdown').countdown({
-    timestamp :  new Date(2021, 0, 1)
-  });
-  $('#countdown2').countdown({
-    timestamp :  new Date(2021, 0, 1)
-  });
-  $('#countdown-modal').countdown({
-    timestamp :  new Date(2021, 0, 1)
-  });
-});*/
+initCountduwn('#timer1');
 
 //Плавная прокрутка к якорю
 $("body").on('click', 'a[href*=#]:not([href=#])', function(e){

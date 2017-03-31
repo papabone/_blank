@@ -1,8 +1,8 @@
 .fix-parant{
-  padding-top: 70px;//fixed header
+  padding-top: 90px;//fixed header
   .fix{
     position: fixed;
-    height: 70px;
+    height: 90px;
     width: 100%;
     left: 0;
     top: 0;
@@ -11,16 +11,16 @@
 }
 header,
 footer{
-  padding-top: 10px;
+  padding-top: 15px;
   background-color: $bg-c; 
 }
 .button{
   background-color: $btn-c;
   color: $font-c; 
-  padding: 15px 25px;
-  border-radius: 0px;
-  font-size: 0.8rem;
-  font-weight: bold;
+  padding: 16px 50px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: normal;
   letter-spacing: 1px;
   text-transform: uppercase;
   white-space: nowrap;
@@ -47,14 +47,18 @@ footer{
 }
 .title{
   font-family: $font-f-alt;
-  font-size: 2.2rem;
-  line-height: 1.2;
-  font-weight: 700;
+  font-size: 3.1rem;
+  line-height: 1.0;
+  font-weight: 400;
   text-align: center;
-  text-transform: uppercase;
+  color: $font-blue;
+  &.alt{
+    color: $font-c;
+  }
 }
 .big.title{
-  font-size: 2.7rem;
+  //font-size: 2.7rem;
+  font-weight: 600;
 }
 .desc{
   font-size: 1rem;
@@ -92,14 +96,14 @@ footer{
   font-weight: 700;
   font-size: 1.7rem;
   &.old{
-    width: 50%;
+    width: 57%;
     text-align: right;
     span.cros{
       text-decoration: line-through;
     }
   }
   &.new{
-    width: 50%;
+    width: 43%;
     padding-left: 15px;
     text-align: left;
   }
@@ -112,12 +116,14 @@ form{
   select{
     width: 60%;
     margin: 6px 0;
-    border-radius: 10px;
+    border-radius: 5px;
     border-width: 0;  
     outline: none;
     max-width: 100%;
     color: $placehold-c;
-    padding: 10px 17px;
+    font-size: 1.1rem;
+    padding: 15px 30px;
+    border: 1px solid #8b809f;
     &:active, 
     &:focus{
       outline: 1px solid red;
@@ -129,14 +135,15 @@ form{
     display: inline-block;
     max-width: 100%;
     border-width: 0;
-    padding: 12px 17px;
+    padding: 15px 17px;
   }
   @include plecehold($placehold-c);
 }
 .discount{
+  font-family: $font-f-alt;
   width: 80px;
   height: 100px;
-  background: url('../img/discount.png') no-repeat center top;
+  background: url('../img/i/discount.png') no-repeat center top;
   background-size: 100%;  
   display: inline-block;
   position: absolute;
@@ -177,69 +184,3 @@ form{
   }
 }
 
-@media (max-width: 1199px){
-  .fix-parant{
-    padding-top: 70px;//fixed header
-    .fix{
-      height: 70px;
-    }
-  }
-  header{
-    padding-top: 15px;
-  }
-  .button{
-    padding: 10px 20px;
-  }
-  form{
-    input,
-    select{
-      padding: 8px 15px;
-    }
-    .button{
-      padding: 10px 17px;
-    }
-  }
-}
-
-@media (max-width: 991px){
-  .fix-parant{
-    padding-top: 50px;//fixed header
-    .fix{
-      height: 50px;
-    }
-  }
-  header{
-    padding-top: 10px;
-  }
-  .button{
-    padding: 7px 12px;
-  }
-  .discount{
-    &.circle{
-      padding: 20px 12px;
-    }
-  }
-  form{
-    input,
-    select{
-      padding: 5px 10px;
-    }
-    .button{
-      padding: 7px 12px;
-    }
-  }
-}
-@media (max-width: 767px){
-  .fix-parant{
-    padding-top: 40px;//fixed header
-    .fix{
-      height: 40px;
-    }
-  }
-  header{
-    padding-top: 7px;
-  }
-  .button{
-    padding: 7px 12px;
-  }
-}

@@ -57,20 +57,19 @@
   </div>
 </header>
 
-<section class="wrapper block-main covered">
+<section class="wrapper block-main block-1 covered">
   <div class="container">
     <div class="row"> 
-      <h1 class="title big col-xs-12">профессиональная<br> палетка теней</h1>
-      <p class="desc col-xs-12">Девять оттенков, подобранные самой Кайли.</p>
-      <div class="col-xs-12">
-        <div class="price old"><span class="cros">1980 </span></div>
-        <div class="price new">990 руб.</div>
-      </div>
-      <div class="product col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3">
-        <img src="img/product.png" alt="Продукт">
-        <span class="discount circle">-50%</span>
-      </div>
-      <div class="col-xs-8 col-xs-offset-2">
+      <div class="main col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2">
+        <h1 class="title big">Гипертониум снизит давление до возрастной нормы!</h1>
+        <p class="desc dark">Приведите давление в норму с Гипертониумом в считанные минуты без вреда для здоровья!</p>
+        <div class="col-xs-12">
+          <div class="price old blue">Всего за <span class="cros"> 1980 </span></div>
+          <div class="price new purp">990 руб.</div>
+        </div>
+        <div class="buy-counter dark">Сегодня уже купили:  
+            <span class="buy-number"><span class="buy people count-people">10800</span> человек</span>
+          </div>
         <form action="">
           <label> 
             <input type="text" name="name" placeholder="Имя">
@@ -85,9 +84,20 @@
               <option value="">Страна 3</option>
             </select>
           </label>
-          <button class="button" type="submit">заказать палетку</button>
+          <button class="button" type="submit">заказать со скидкой 75%</button>
         </form>
+        <div class="countdown-wrap dark">
+          <p class="desc">До окончания акции осталось:</p>
+          <div id="timer1"></div>
+        </div>
       </div> 
+      <div class="product col-xs-12 col-sm-2">
+        <img src="img/product.png" alt="Продукт">
+        <span class="discount">75%</span>
+        <div class="product-counter dark">
+          <b>ВНИМАНИЕ! </b>Осталось товаров со скидкой: <span class="product-number"><span class="left blink">5</span> шт.</span>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -112,32 +122,44 @@
       </div>
       <div class="modal-body">
         <div class="main-wrap">
-          <h2 class="title">профессиональная<br>палетка теней</h2>
-          <p class="desc">Девять оттенков, подобранные самой Кайли.</p>
-          <div class="price old"><span class="cros">1980 </span></div>
-          <div class="price new">990 руб.</div>
-          <div class="product">
-            <img src="img/product.png" alt="Продукт">
-            <span class="discount circle">50%</span>
+          <h1 class="title big">Гипертониум снизит давление до возрастной нормы!</span></h1>
+          <p class="desc dark">Приведите давление в норму с Гипертониумом в считанные минуты без вреда для здоровья!</p>
+          <div class="price-wrap">
+            <div class="price old blue">Всего за <span class="cros"> 1980 </span></div>
+            <div class="price new purp">990 руб.</div>
+          </div>
+          <div class="buy-counter dark">Сегодня уже купили: 
+            <div class="buy-number"><span class="buy people count-people">108</span> человек</div>
           </div>
           <form action="">
             <label> 
-              <input type="text" name="name" placeholder="Ваше имя">
+              <input type="text" name="name" placeholder="Имя">
             </label>
             <label> 
               <input type="text" name="phone" placeholder="Телефон">
             </label>
             <label>
               <select name="" id="">
-                <option value="">1</option>
-                <option value="">2</option>
-                <option value="">3</option>
+                <option value="">Страна 1</option>
+                <option value="">Страна 2</option>
+                <option value="">Страна 3</option>
               </select>
             </label>
-            <button class="button" type="submit">заказать</button>
-            </form>
+            <button class="button" type="submit">заказать со скидкой 75%</button>
+          </form>
+          <div class="countdown-wrap dark">
+            <p class="desc">До окончания акции осталось:</p>
+            <div id="timer-modal"></div>
+          </div>
         </div>
-        
+        <div class="product hidden-xs">
+          <img src="img/product.png" alt="Продукт">
+          <span class="discount">-75%</span>
+          <div class="product-counter dark">
+            <b>ВНИМАНИЕ! </b>Осталось товаров со скидкой: 
+            <div class="product-number green"><span class="left blink">5</span> шт.</div>
+          </div>
+        </div> 
       </div>
       <!--<div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
@@ -147,11 +169,15 @@
   </div>
 </div>
 
-  <!--<script src="js/countdown.js"></script>-->
+<div class="show-message"></div>
+
+ 
   <script src="js/sandwich.js"></script>
   <script src="js/youtube.js"></script>
   <script src="js/swiper.js"></script>
   <script src="js/insta.js"></script>
+  <script src="js/timer.js"></script>
+  <script src="js/count.js"></script>
 
 
   <script src="js/common.js"></script>
