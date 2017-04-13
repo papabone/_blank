@@ -22,6 +22,22 @@
       padding: 14px 0;
     }
   }
+  .icon-box{
+    &.vert{
+      padding-top: 80px;
+      &::before{
+        height: 70px;
+        background-size: 70px 100%;
+      }
+    }
+    .title{
+      padding-bottom: 3px;
+    }
+    .desc{
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }
 }
 @media (max-width: 767px){
 html{

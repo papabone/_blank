@@ -2,7 +2,7 @@ count_class = ".count-people";
 lastpack_class = ".lastpack";
 message02 = '<div class="show-message__item show-message_online"><i class="everad-sprite everad-sprite-online_user"></i><p class="show-message__info icon-box horizon">Количество посетителей на сайте:  <span id="js-user-id"></span></p></div>';
 message03 = '<div class="show-message__item show-message_online"><i class="everad-sprite everad-sprite-callback"></i><p class="show-message__info icon-box horizon"><span class="js-show-name"><span class="js-name"></span></span>, сделал(а) заявку на обратный звонок</p></div>';
-message04 = '<div class="show-message__item show-message_call last-message"><i class="everad-sprite everad-sprite-bucket"></i><p class="show-message__info icon-box horizon"><br><span style="font-size: 16px;"> Осталось <span class="pacedNamed"></span> по акции<br><span style="color: red;font-size: 20px;font-weight: bold;"><span style="color: red;">5</span></span> шт.</span></p></div>';
+message04 = '<div class="show-message__item show-message_call last-message"><i class="everad-sprite everad-sprite-bucket"></i><p class="show-message__info icon-box horizon"><span style="font-size: 16px;"> Осталось <span class="pacedNamed"></span> по акции<br><span style="color: red;font-size: 20px;font-weight: bold;"><span style="color: red;">5</span></span> шт.</span></p></div>';
 flag_phone = true;
 flag_five = true;
 flag_key = true;

@@ -15,11 +15,16 @@
   <link rel='stylesheet' type='text/css' href='css/swiper.css' />
   <link rel='stylesheet' type='text/css' href='css/style.css' />
 
-  <link rel="icon" href="img/fi/favicon.png" type="image/x-icon" />
-  <link rel="shortcut icon" href="img/fi/favicon.png" type="image/x-icon" />
+  <link rel="icon" href="img/fi/fav.png" type="image/x-icon" />
+  <link rel="shortcut icon" href="img/fi/fav.png" type="image/x-icon" />
+  <link rel="favicons" href="img/fi/fav.png" />
+  @@include('../dist/img/fi/fav.html')
+  <!-- Для вставки из img/fi/path.html -->
+  
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>var kmacb_form_selector = ".custom-popup";</script> 
 
 
 </head>
@@ -51,7 +56,7 @@
         </ul>
       </div>  
       <div class="col-sm-2 hidden-xs call_back">
-        <a href="#myModal" data-toggle="modal" data-target="#myModal" class="button">заказать</a>
+        <a href="#myModal" data-toggle="modal" data-target="#myModal" class="button custom-popup">заказать</a>
       </div>
     </div>
   </div>
@@ -102,6 +107,15 @@
   </div>
 </section>
 
+<section class="wrapper block-2">
+  <div class="container">
+    <div class="row">
+      <div class="icon-box vert col-xs-4 one"></div>
+      <div class="icon-box vert col-xs-4 two"></div>
+      <div class="icon-box vert col-xs-4 three"></div>
+    </div>
+  </div>
+</section>
 
 <footer wrapper>
   <div class="container">
@@ -177,7 +191,6 @@
   <script src="js/swiper.js"></script>
   <script src="js/insta.js"></script>
   <script src="js/timer.js"></script>
-  <script src="js/count.js"></script>
 
 
   <script src="js/common.js"></script>
@@ -185,6 +198,28 @@
   <script>$('#myModal').modal({
    show: false
   })</script>
+
+  <!-- <script src="audiojs/audio.min.js"></script>
+  <script>
+    audiojs.events.ready(function() {
+      var as = audiojs.createAll();
+    });
+  </script> -->
+
+  <!-- <script src="js/jquery.magnific-popup.min.js"></script>
+  <script>
+  $('.country_select').change(function(){
+      wachThePrice($(this).val());
+  });
+  $('.country_select').change();
+
+  function wachThePrice(id){
+    price777 = country_list[id].s1, 
+    curr777 = country_list[id].curr; 
+  };
+  </script>
+  
+  <script src="js/count.js"></script> -->
 
 </body>
 </html>

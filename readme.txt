@@ -1,9 +1,11 @@
 Стартовый конфиг для верстки ландоса
-html/scss/js/
+html/scss/js
 
-фикс на xs header - absolute
-new taimer: -countdown.js +timer.js/.scss
-popup count: +count.js/.scss
-new style modal: _modal.scss
-новый поряок адаптации + resp/_*.scss
-change block-main
+подключение кастом-попап для кма
+фикс подключения count.js работает только на сервере
+remove _icon.scss
++audiojs/_audio.scss
++uglify for js compressin
++gulp-favicon
+fix butstrap-modal.js + window.customPopupShowed = true/false
+fix auudio.scss - loading/scrubber bgc: 232323
