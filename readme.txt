@@ -1,11 +1,10 @@
 Стартовый конфиг для верстки ландоса
 html/scss/js
-
-подключение кастом-попап для кма
-фикс подключения count.js работает только на сервере
-remove _icon.scss
-+audiojs/_audio.scss
-+uglify for js compressin
-+gulp-favicon
-fix butstrap-modal.js + window.customPopupShowed = true/false
-fix auudio.scss - loading/scrubber bgc: 232323
+ 
+remove _vars.scss 
+add video.scss
+remove youtube.scss/.js
+change _color.scss
+change _time.scss
+change index/style,_modal,_timer,_xs,_sm,_md.scss
+change .menu на flex

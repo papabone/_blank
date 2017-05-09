@@ -115,6 +115,9 @@
     opacity: 0!important;
     visibility: hidden!important
 }
+.product-number{
+  white-space: nowrap;
+}
 
 @media screen and (max-width:767px) {
     .show-message__info #js-user-id{
@@ -161,7 +164,7 @@
       padding-bottom: 0 !important;
       &::before{
         width: 45px;
-        top: 20px;
+        top: 15px;
         left: 10px;
         background-size: 100% 45px;
       }

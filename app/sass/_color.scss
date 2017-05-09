@@ -1,17 +1,20 @@
-$bg-c:#26193b;
-$bg-c-dark:#0b090e;
+$blue: #a7c4ff;
+$gold: #fff;
+$gray: #d7d7d7;
+$green: #7cd86c;
+$orange: #fff;
+$red: #a7c4ff;
+$purp: #fff;
+
+$bg-c: #111;
+$bg-dark: #0b090e;
+
+$font-c: #ffffff;
+$font-dark: $bg-dark;
 
 $btn-c: transparent;
-$btn-c-activ:#cb555a;
+$btn-c-activ: #7cd86c;
 
-$font-c:#ffffff;
-$font-dark: #232323;
-$font-activ:#fcfcfc;
-
-$font-gold:#fbc731;
-$font-blue: #5c4b79;
-$font-light-blue: #8aeff1;
-$font-purp: #da4f54;
 
 $placehold-c: #232323;
 
@@ -28,15 +31,31 @@ $subtitle-alt: #d1343a;
 .dark{
 	color: $font-dark;
 }
-.purp{
-	color:$font-purp;
-}
-.gold{
-	color:$font-gold;
+.blue{
+	color: $blue;
 }
 .blue{
-	color:$font-blue;
+	color: $blue;
 }
+.gold{
+	color: $gold;
+}
+.gray{
+	color: $gray;
+}
+.green{
+	color: $green;
+}
+.orange{
+	color: $orange;
+}
+.red{
+	color: $red;
+}
+.purp{
+	color: $purp;
+}
+
 
 
 

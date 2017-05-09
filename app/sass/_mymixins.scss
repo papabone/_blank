@@ -1,8 +1,12 @@
+
+$transit: 500ms;
+
 @mixin plecehold($placehold-c) {    
   input{
+    color: $placehold-c;
     &::-webkit-input-placeholder {color: $placehold-c;}
-    &::-moz-placeholder          {color: $placehold-c;}/* Firefox 19+ */
-    &:-moz-placeholder           {color: $placehold-c;}/* Firefox 18- */
+    &::-moz-placeholder          {color: $placehold-c; opacity: 1;}/* Firefox 19+ */
+    &:-moz-placeholder           {color: $placehold-c; opacity: 1;}/* Firefox 18- */
     &:-ms-input-placeholder      {color: $placehold-c;}
   }
 }

@@ -17,9 +17,8 @@
 
   <link rel="icon" href="img/fi/fav.png" type="image/x-icon" />
   <link rel="shortcut icon" href="img/fi/fav.png" type="image/x-icon" />
-  <link rel="favicons" href="img/fi/fav.png" />
-  @@include('../dist/img/fi/fav.html')
-  <!-- Для вставки из img/fi/path.html -->
+  <!-- @@include('../dist/img/fi/fav.html')
+  Для вставки из img/fi/path.html -->
   
 
 
@@ -34,29 +33,26 @@
 <header class="wrapper fix header">
   <div class="container">
     <div class="row">
-      <div class="col-xs-2 visible-xs">
-        <button class="nav-toggle">
-          <div class="sandwich">
-            <div class="sw-top"></div>
-            <div class="sw-mid"></div>
-            <div class="sw-low"></div>
-          </div>
-        </button>
+      <div class="logo col-xs-6 col-sm-3">
+        <img src="img/logo.png" alt="Personal Slim">
       </div>
-      <div class="logo col-xs-8 col-sm-3">
-        <img src="img/logo.png" alt="Kylie Kyshadow">
+      <div class="col-sm-2 hidden-xs">
+        <div class="icon-box horizon one">
+        <div class="desc">Проверено клиническими испытаниями</div>
+        </div>
       </div>
-      <div class="menu col-sm-7 hidden-xs">
-        <ul>
-          <li><a href="#about">О продукте</a></li>
-          <li><a href="#plus">Преимущества</a></li>
-          <li><a href="#video">Видео-обзор</a></li>
-          <li><a href="#review">Отзывы</a></li>
-          <li><a href="#expert">Мнение визажиста</a></li>
-        </ul>
-      </div>  
-      <div class="col-sm-2 hidden-xs call_back">
-        <a href="#myModal" data-toggle="modal" data-target="#myModal" class="button custom-popup">заказать</a>
+      <div class="col-sm-2 hidden-xs">
+        <div class="icon-box horizon two">
+          <div class="desc">100% <br>натуральный состав</div>
+        </div>
+      </div>
+      <div class="col-sm-2 hidden-xs">
+        <div class="icon-box horizon three">
+          <div class="desc">75% скидка только <br>сегодня</div>
+        </div>
+      </div>
+      <div class="col-sm-3 col-xs-6 call-back">
+        <a href="#" data-toggle="modal" data-target="#myModal" class="button custom-popup">заказать звонок</a>
       </div>
     </div>
   </div>
@@ -64,22 +60,27 @@
 
 <section class="wrapper block-main block-1 covered">
   <div class="container">
-    <div class="row"> 
-      <div class="main col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2">
-        <h1 class="title big">Гипертониум снизит давление до возрастной нормы!</h1>
-        <p class="desc dark">Приведите давление в норму с Гипертониумом в считанные минуты без вреда для здоровья!</p>
-        <div class="col-xs-12">
-          <div class="price old blue">Всего за <span class="cros"> 1980 </span></div>
-          <div class="price new purp">990 руб.</div>
+    <div class="row">
+      <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2">
+        <h1 class="title">Беспокоят папилломы и бородавки? Papiderm уничтожит их за 1 курс!</h1>
+        <p class="subtitle blue">Быстро и навсегда избавляет от угрозы рака, который вызывают папилломы</p>
+        <div class="countdown-wrap visible-xs">
+          <p class="desc">До окончания акции осталось:</p>
+          <div id="timer1-xs"></div>
         </div>
-        <div class="buy-counter dark">Сегодня уже купили:  
-            <span class="buy-number"><span class="buy people count-people">10800</span> человек</span>
-          </div>
-        <form action="">
-          <label> 
+        <div class="price  col-xs-12">
+          <div class="old">Всего за <span class="cros"> 1980 </span></div>
+          <div class="new green">990 руб.</div>
+        </div>
+        <div class="countdown-wrap hidden-xs">
+          <p class="desc">До окончания акции осталось:</p>
+          <div id="timer1"></div>
+        </div>
+        <form action="success.php" method="post">
+          <label>
             <input type="text" name="name" placeholder="Имя">
           </label>
-          <label> 
+          <label>
             <input type="text" name="phone" placeholder="Телефон">
           </label>
           <label>
@@ -91,16 +92,15 @@
           </label>
           <button class="button" type="submit">заказать со скидкой 75%</button>
         </form>
-        <div class="countdown-wrap dark">
-          <p class="desc">До окончания акции осталось:</p>
-          <div id="timer1"></div>
+        <div class="buy-counter">Сегодня уже купили:
+          <span class="buy-number blue"><span class="buy people count-people">10800</span> человек</span>
         </div>
-      </div> 
+      </div>
       <div class="product col-xs-12 col-sm-2">
         <img src="img/product.png" alt="Продукт">
-        <span class="discount">75%</span>
-        <div class="product-counter dark">
-          <b>ВНИМАНИЕ! </b>Осталось товаров со скидкой: <span class="product-number"><span class="left blink">5</span> шт.</span>
+        <span class="discount">-75%</span>
+        <div class="product-counter">
+          <b>ВНИМАНИЕ! </b>Акционное предложение ограничено. Осталось товаров со скидкой:  <span class="product-number green"><span class="left blink">5</span> шт.</span>
         </div>
       </div>
     </div>
@@ -117,7 +117,7 @@
   </div>
 </section>
 
-<footer wrapper>
+<footer>
   <div class="container">
     <div class="row">
       <p>OOO Название, Реквизиты, Адрес, и др.OOO Название, Реквизиты, Адрес, и др.</p>
@@ -136,20 +136,21 @@
       </div>
       <div class="modal-body">
         <div class="main-wrap">
-          <h1 class="title big">Гипертониум снизит давление до возрастной нормы!</span></h1>
-          <p class="desc dark">Приведите давление в норму с Гипертониумом в считанные минуты без вреда для здоровья!</p>
-          <div class="price-wrap">
-            <div class="price old blue">Всего за <span class="cros"> 1980 </span></div>
-            <div class="price new purp">990 руб.</div>
+          <h2 class="title">Болят суставы? Пантогор избавит Вас от боли!</h2>
+          <p class="subtitle">Гель из уникальных пант канадского марала вернет вас к полноценной жизни в считанные минуты!</p>
+          <div class="price">
+            <div class="old">Всего за <span class="cros"> 1980 </span></div>
+            <div class="new green">990 руб.</div>
           </div>
-          <div class="buy-counter dark">Сегодня уже купили: 
-            <div class="buy-number"><span class="buy people count-people">108</span> человек</div>
+          <div class="countdown-wrap hidden-sm hidden-xs">
+            <p class="desc">До окончания акции осталось:</p>
+            <div id="timer-modal"></div>
           </div>
-          <form action="">
-            <label> 
+          <form action="success.php" method="post">
+            <label>
               <input type="text" name="name" placeholder="Имя">
             </label>
-            <label> 
+            <label>
               <input type="text" name="phone" placeholder="Телефон">
             </label>
             <label>
@@ -161,24 +162,18 @@
             </label>
             <button class="button" type="submit">заказать со скидкой 75%</button>
           </form>
-          <div class="countdown-wrap dark">
-            <p class="desc">До окончания акции осталось:</p>
-            <div id="timer-modal"></div>
+          <div class="buy-counter">Сегодня уже купили:
+            <div class="buy-number"><span class="buy people count-people">108</span> человек</div>
           </div>
         </div>
         <div class="product hidden-xs">
           <img src="img/product.png" alt="Продукт">
           <span class="discount">-75%</span>
-          <div class="product-counter dark">
-            <b>ВНИМАНИЕ! </b>Осталось товаров со скидкой: 
-            <div class="product-number green"><span class="left blink">5</span> шт.</div>
-          </div>
-        </div> 
+          <div class="product-counter">
+          <b>ВНИМАНИЕ! </b>Акционное предложение ограничено. Осталось товаров со скидкой:  <span class="product-number  gold"><span class="left blink">5</span> шт.</span>
+        </div>
+        </div>
       </div>
-      <!--<div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
-        <button type="button" class="btn btn-primary">Сохранить изменения</button>
-      </div>-->
     </div>
   </div>
 </div>
@@ -187,7 +182,6 @@
 
  
   <script src="js/sandwich.js"></script>
-  <script src="js/youtube.js"></script>
   <script src="js/swiper.js"></script>
   <script src="js/insta.js"></script>
   <script src="js/timer.js"></script>
@@ -205,6 +199,20 @@
       var as = audiojs.createAll();
     });
   </script> -->
+
+  <!--<link rel="stylesheet" href="css/plyr.css">
+  <script src="https://cdn.plyr.io/2.0.12/plyr.js"></script>
+  <script>
+    plyr.setup([
+      document.querySelector('.js-player-1'),
+      document.querySelector('.js-player-2'),
+      document.querySelector('.js-player-3')
+    ],{
+      volume: 5,
+      iconUrl: "video/plyr.svg",
+      //fullscreen: {enabled: false}
+    });
+  </script>-->
 
   <!-- <script src="js/jquery.magnific-popup.min.js"></script>
   <script>

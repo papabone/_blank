@@ -1,37 +1,3 @@
-//on-top
-var onTopElement = document.querySelector('.on-top-element');
-if(onTopElement){
-  onTopElement.onclick = function(){
-    this.classList.toggle('on-top');
-  }
-}
-
-//tagVideo
-var videoElem = document.querySelector('video');
-// - poster:hover
-if(videoElem && videoElem.hasAttribute('poster') ){
-  videoElem.addEventListener('mousemove', videoHoverAdd);
-  var oldPoster = videoElem.getAttribute('poster');
-  videoElem.addEventListener('mouseout', videoHoverRemove);
-};
-function videoHoverAdd(e){
-  if(videoElem.dataset.posterHover){
-    videoElem.setAttribute('poster', videoElem.dataset.posterHover);
-  };
-};
-function videoHoverRemove(e){
-  videoElem.setAttribute('poster', oldPoster);
-};
-// - play
-videoElem.addEventListener('click',videoPlay);
-function videoPlay(e){
-  if (this.paused) {
-      this.play();
-  } else {
-      this.pause();
-  }
-};
-
 //countdown
 initCountduwn('#timer1');
 
@@ -52,9 +18,9 @@ $('.to-form').click(function(e){
 */
 
 //кнопка sandwiich
-jQuery(document).ready(function() {
+/*jQuery(document).ready(function() {
   sandwich.init();
-});
+});*/
 
 //Проверка кода на упаковке
 /*jQuery(document).ready(function() {

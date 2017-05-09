@@ -76,7 +76,7 @@ gulp.task("fav", function () {
         appDescription: "plain landing page",
         developerName: "Konstantin Filon",
         developerURL: "http://zen-b.com",
-        background: "transporent",
+        background: "#dadada",
         path: "img/fi/",
         url: "",
         display: "standalone",

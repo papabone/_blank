@@ -1,19 +1,20 @@
 //main
 .modal{
   .modal-dialog {
-    width: 1045px; //mb px??
+    width: 700px; //mb px??
   }
   .modal-content {
     //background-image: url('../img/bg-modal.jpg');
-    background-color: #dae8f1;
+    background-color: $bg-c;
     border-radius: 0;
-    box-shadow: 0 0 70px rgba(0,0,0,0.9);
+    box-shadow: 0 0 150px rgba(0,0,0,0.99);
   }
   //header
   .modal-header {
     border:none;
     text-align: right;
-    padding: 20px;
+    padding: 15px;
+    padding-bottom: 0;
     .close {
       background-color: transparent;
       z-index: 999;
@@ -36,99 +37,82 @@
   .modal-body{
     padding: 0 5% 5% 5%;
     .main-wrap{
-      width: 80%;
+      width: 77%;
       float: left;
       padding-bottom: 20px;
     }
     .title{
-      padding-top: 3px;
-      padding-bottom: 0px;
+      padding-top: 15px;
+      font-size: 2.4rem;
+      font-weight: bold;
       line-height: 0.9; 
       padding-bottom: 10px;
     }
-    .desc{
-      padding-bottom: 7px;
-      font-size: 1.25rem;
-      line-height: 1.1;
-      padding-right: 140px;
-      padding-left: 140px;
+    .subtitle{
+      padding-bottom: 3px;
+      font-size: 0.85rem;
+      padding-right: 12%;
+      padding-left: 12%;
     }
     .price{
-      font-size: 2.3rem;
-      font-family: $font-f-alt;
-      font-weight: 600;
-      padding-bottom: 5px;
-      &.old{
-        width: 57%;
-        padding-right: 10px;
-      }
-      &.new{
-        width: 43%;
-      }
-    }
-    .buy-counter{   
-      font-size: 1.2rem;  
-      letter-spacing: 0.2px;
-      .buy-number{
-        display: inline-block;
-        font-weight: bold;
-      }
-    }
-    form{
-      padding-bottom: 5px;
-      font-size: 0.85rem;
-      input,
-      select,
-      .button{
-        background-color: #fff;
-        display: block;
-        width: 40%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 7px;
-      }
-      .button{
-        background-color: $btn-c-activ;
-        border-color: $btn-c-activ;
-        &:hover,
-        &:focus{
-          background-color: #932c31;
-          border-color: #932c31;
-        }
-      }
+      font-size: 1.9rem;
     }
     .countdown-wrap{
       padding-top: 7px;
       .countdown{
         .wrap{
-          padding-top: 5px;
-          &:before{
-            top: 0px;
-          }
+          padding-top: 2px;
         } 
+      }
+    }
+    form{
+      padding: 10px 20px;
+      font-size: 0.85em;
+      input,
+      select,
+      .button{
+        width: 70%;
+        display: block;
+      }
+      .button{
+        padding: 12px 0;
+        font-size: 0.9rem;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+      }
+    }
+    .buy-counter{   
+      letter-spacing: 0.2px;
+      padding-bottom: 15px;
+      .buy-number{
+        display: inline-block;
+        color: $btn-c-activ;
       }
     }
     .product{
       display: inline-block;
-      width: 20%;
+      width: 23%;
       position: relative;
       padding-top: 80px;
       img{
-        width: 100%;
-        margin-left: -70px;
+        width: 110%;
+        margin-left: -50px;
       }
       .discount{
-        top: 80px;
+        width: 64px;
+        height: 80px;
+        top: 50px;
         right: 30px;
-        padding-top: 25px;
-        font-size: 1.5rem;
+        padding-top: 21px;
+        font-size: 1.2rem;
         z-index: 3;
       }
       .product-counter{
-        font-size: .85rem;
-        width: 100%;
-        margin-top:10px;
-        margin-left: -70px;
+        padding-bottom: 10px;
+        font-size: .75rem;
+        width: 110%;
+        margin-top:28px;
+        margin-left: -50px;
         text-align: left;
         .product-number{
           display: inline-block;
@@ -138,7 +122,75 @@
     }
   }
 }
-
+@media (max-width: 1199px) {
+.modal{
+  .modal-body{
+    .product{
+      img{
+        width: 101%;
+      }
+    }
+  }
+}
+}
+@media (max-width: 991px) {
+  .modal{
+    .modal-dialog {
+      width: 700px;
+    }
+    .modal-header{
+      padding-bottom: 0;
+    }
+    .modal-body{
+      .title{
+        padding-top: 15px;
+        font-size: 2.4rem;
+      }
+      .desc{
+        font-size: 1.1rem;
+        padding-right: 10%;
+        padding-left: 10%;
+      }
+      .price{
+        font-size: 2.1rem;
+      }
+      .buy-counter{
+        font-size: 1.1rem;
+      }
+      form{
+        .button,
+        input,
+        select{
+          width: 50%;
+        }
+        .button{
+          font-size: 0.9rem;
+        }
+      }
+      .product{
+        padding-top: 70px;
+        img{
+          width: 70%;
+          margin-left: -50px;
+        }
+        .discount{
+          width: 64px;
+          height: 80px;
+          top: 70px;
+          right: 40px;
+          padding-top: 23px;
+          font-size: 1.2rem;
+        }
+        .product-counter{
+          font-size: .75rem;
+          margin-left: -50px;
+          margin-top: 17px;
+          padding-bottom: 15px;
+        }
+      }
+    }
+  }
+}
 @media (max-width: 767px){
   .modal{
     .modal-dialog {
@@ -164,8 +216,8 @@
         padding-top: 10px;
         font-size: 1.8rem;
       }
-      .desc{
-        font-size: 0.8rem;
+      .subtitle{
+        font-size: 1rem;
         padding-right: 2%;
         padding-left: 2%;
       }
@@ -218,93 +270,6 @@
 @media (max-width: 620px) {
 }
 @media (max-width: 420px) {
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .modal{
-    .modal-dialog {
-      width: 700px;
-    }
-    .modal-header{
-      padding-bottom: 0;
-    }
-    .modal-body{
-      .title{
-        padding-top: 15px;
-        font-size: 2.4rem;
-      }
-      .desc{
-        font-size: 1.1rem;
-        padding-right: 10%;
-        padding-left: 10%;
-      }
-      .price{
-        font-size: 2.1rem;
-      }
-      .buy-counter{
-        font-size: 1.1rem;
-      }
-      form{
-        .button,
-        input,
-        select{
-          width: 50%;
-        }
-        .button{
-          font-size: 0.9rem;
-        }
-      }
-      .product{
-        padding-top: 70px;
-        img{
-          margin-left: -50px;
-        }
-        .discount{
-          width: 64px;
-          height: 80px;
-          top: 70px;
-          right: 10px;
-          padding-top: 23px;
-          font-size: 1.2rem;
-        }
-        .product-counter{
-          font-size: .75rem;
-          margin-left: -50px;
-          margin-top: 17px;
-          padding-bottom: 15px;
-        }
-      }
-    }
-  }
-}
-@media (min-width: 992px)and(max-width: 1199px){
-  .modal{
-    .modal-dialog {
-      width: 930px; 
-    }
-    .modal-header{
-      padding-bottom: 0;
-    }
-    .modal-body{
-      .title{
-        padding-top: 15px;
-        font-size: 2.8rem;
-      }
-      .desc{
-        font-size: 1.1rem;
-      }
-      .price{
-        font-size: 2.1rem;
-      }
-      .buy-counter{
-        font-size: 1.1rem;
-      }
-      form{
-        .button{
-          font-size: 0.9rem;
-        }
-      }
-    }
-  }
 }
 
 

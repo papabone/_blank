@@ -7,10 +7,10 @@
     }
   }
   header{
-    padding-top: 12px;
+    padding-top: 15px;
   }
   .button{
-    padding: 10px 20px;
+    padding: 14px 20px;
   }
   form{
     input,
@@ -107,7 +107,7 @@ footer{
 header{ 
   .logo{
     padding-top: 4px;
-    padding-right: 30px;
+    padding-right: 60px;
   }
   .icon-box{
     margin-top: -2px;
@@ -115,66 +115,92 @@ header{
       font-size: 0.9rem;
     }
     &.horizon{
-      padding-left: 37px;
       &::before{
-        width: 50px;
-        left: -25px;
-        background-size: 100% 50px;
+        width: 55px;
+        background-size: 100% 55px;
       }
+    }
+    &.one{
+      padding-left: 35px;
+    }
+    &.one:before{
+      left: -30px;
+    }
+    &.two{
+      padding-left: 35px;
+    }
+    &.two::before{
+      left: -25px;
+    }
+    &.three{
+      padding-right: 10px;
+      padding-left: 20px;
+    }
+    &.three::before{
+      left: -35px;
     }
   }
 }
 .block-main{
-  padding-bottom: 75px;
+  padding-top: 55px;
+  padding-bottom: 70px;
   .title{
-    font-size: 2.7rem;
-    padding-top: 25px;
-    padding-bottom: 10px;
+    font-size: 2.3rem;
+    padding-bottom: 5px;
   }
-  .desc{
-    padding-right: 100px;
-    padding-left: 100px;
-    padding-bottom: 10px;
+  .subtitle{
+    font-size: 0.9rem;
+    padding-right: 108px;
+    padding-left: 108px;
+    padding-bottom: 5px;
   }
   .price{
+    font-size: 1.9rem;
     padding-bottom: 10px;
-    &.old{
-      width: 58%;
-    }
-    &.new{
+  }
+  .buy-counter{
+    padding-bottom: 4px;
+  }
+  form{
+    padding-top: 7px;
+    input,
+    select,
+    .button{
       width: 42%;
     }
   }
-  form{
-    padding-top: 8px;
-    input,
-    select,
-    .button{ 
-      margin-bottom: 10px;
-      width: 44%;
-    }
-  }
   .countdown-wrap{
-    padding-top: 8px;
+    padding-top: 7px;
   }
   .product{
+    margin-top: 70px;
+    margin-left: -108px;
+    padding: 0;
+    img{
+      width: 100%;
+    }
+    .discount{
+      top: -30px;
+      right: -30px;
+      padding-top: 30px;
+    }
     .product-counter{
-      bottom: -54px;
+      width: 120%;
+      left: -6%;
+      bottom: -100px;
     }
   }
 }
-.block-13{
-  .desc{
-    padding-top: 15px;
-  }
-  .review{
-    .name{
-      padding-top: 7px; 
-      font-size: 1.8rem;
-      padding-bottom: 2px;
-    }
-    .city{
-      padding-bottom: 17px;
+.block-2{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  .icon-box{
+    &.vert{
+      padding-top: 85px;
+      &::before{
+        height: 85px;
+        background-size: 102px 100%;
+      }
     }
   }
 }

@@ -16,11 +16,10 @@ footer{
 }
 .button{
   background-color: $btn-c;
-  color: $font-c; 
-  padding: 16px 50px;
+  padding: 15px 0;
   border-radius: 5px;
   font-size: 1rem;
-  font-weight: normal;
+  font-weight: 500;
   letter-spacing: 1px;
   text-transform: uppercase;
   white-space: nowrap;
@@ -30,19 +29,18 @@ footer{
   text-align: center;
   margin: auto;
   @include transit($transit);
-  &:hover,
-  &:active,
-  &:focus{
-    background-color: $btn-c-activ;
-    color: $font-activ;
-    text-decoration: none; 
-  }
-  &:active,
   &:visited,
   &:link{
     text-decoration: none;
     outline:none;
-    color: $font-c; 
+    color: $btn-c-activ; 
+  }
+  &:hover,
+  &:active,
+  &:focus{
+    background-color: $btn-c-activ;
+    color: $font-dark;
+    text-decoration: none;
   }
 }
 .title{
@@ -51,14 +49,29 @@ footer{
   line-height: 1.0;
   font-weight: 400;
   text-align: center;
-  color: $font-blue;
+  color: $font-c;
   &.alt{
     color: $font-c;
   }
-}
-.big.title{
-  //font-size: 2.7rem;
-  font-weight: 600;
+    .wing{
+    position: relative;
+    &:before,
+    &:after{
+      content: '';
+      border: 1px solid $font-c;
+      border-bottom-width: 0;
+      width: 108px;
+      height: 0;
+      position: absolute;
+      top: 40px;
+    }
+    &:before{
+      left: -120px;
+    }
+    &:after{
+      right: -120px;
+    }
+  }
 }
 .desc{
   font-size: 1rem;
@@ -78,33 +91,63 @@ footer{
 }
 .menu{
   ul{
-    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
     padding: 0;
+    margin: 0;
   }
   li{
-    width: 20%;
+    text-transform: uppercase;
     display: inline-block;
-    float: left;
-    &:first-letter{
-      text-transform: uppercase;
+  }
+  a:visited,
+  a:link{
+    text-decoration: none;
+    outline:none;
+    color: $font-c; 
+  }
+  a:hover,
+  a:active,
+  a:focus{
+    color: $font-c;
+    text-decoration: none;
+    @include transit(200ms);
+  }
+  &.underliner{
+    li{ 
+      height: 55px;
+      padding-top: 10px;
+      a{
+        display: inline-block;
+        height: 100%;
+      }
+      :hover,
+      :active,
+      :focus{
+        border: 0px solid $font-c;
+        border-bottom-width: 3px;
+        color: $font-c;
+      }
     }
   }
 }
 .price{
-  float: left;
   font-family: $font-f-alt;
   font-weight: 700;
-  font-size: 1.7rem;
-  &.old{
-    width: 57%;
+  font-size: 2.5rem;
+  >div{
+    display: inline;
+  }
+  .old{
     text-align: right;
+    padding-right: 7px;
     span.cros{
       text-decoration: line-through;
     }
   }
-  &.new{
-    width: 43%;
-    padding-left: 15px;
+  .new{
+    padding-left: 7px;
     text-align: left;
   }
 }
@@ -203,6 +246,10 @@ form{
   &.horizon{
     padding-left: 20px;
     text-align: left;
+    .desc,
+    .title{
+      text-align: left;
+    }
     &::before{
       content: ""; 
       position: absolute;
@@ -214,6 +261,64 @@ form{
       background-repeat: no-repeat;
       background-position: top center;
     }
+  }
+  &.i-lg{
+    &.vert{
+      padding-top: 215px;
+      &::before{
+        height: 200px;
+        background-size: 200px 100%;  
+      }
+    }
+  }
+  &.i-md{
+    &.vert{
+      padding-top: 160px;
+      &::before{
+        height: 150px;
+        background-size: 150px 100%;  
+      }
+    }
+  }
+  &.i-sm{
+    &.vert{
+      padding-top: 135px;
+      &::before{
+        height: 125px;
+        background-size: 125px 100%;  
+      }
+    }
+  }
+  &.i-xs{
+    &.vert{
+      padding-top: 110px;
+      &::before{
+        height: 100px;
+        background-size: 100px 100%;  
+      }
+    }
+    &.horizon{
+      padding-left: 115px;
+      min-height: 100px;
+      &::before{
+        width: 100px;
+        background-size: 100% 100px;
+      }
+    }
+  }
+  .title{
+    font-family: $font-f;
+    color: $font-c;
+    padding-bottom: 5px;
+    letter-spacing: normal;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .desc{
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-bottom: 0;
   }
 }
 
